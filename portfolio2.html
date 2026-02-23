@@ -1,165 +1,346 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio-attaya2</title>
-    <link rel="stylesheet" href="src/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-    <script src="/src/main.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>portfolio-attaya2</title>
+  <link rel="stylesheet" href="src/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="/src/main.js"></script>
 </head>
 
-<body class="flex h-screen overflow-hidden">
-    <header
-        class="flex items-center justify-between p-4 flex-col bg-[#FFF1E6] w-[5%] h-screen ring-1 ring-offset-black z-100 ">
-        <nav class="flex flex-col justify-between items-center mt-5 w-full h-full">
-            <div onclick="resetLayout()"
-                class="kaushan-script-regular text-[28px] hover:text-black/75 duration-100 ease-in-out -translate-x-1 hover:translate-x-1 hover:-skew-x-10 ">
-                AA</div>
-            <div class="sosmed flex flex-col items-center justify-center w-12 -mb-4">
-                <div
-                    class="pembatas group bg-white/25 ring-1 ring-black w-18 h-18 flex items-center justify-center  hover:bg-black duration-200 ease-in-out">
-                    <a href="https://www.instagram.com/taya_asakura/" class=""><i
-                            class="fa-brands fa-instagram text-3xl m-4 hover:scale-105 hover:text-white group-hover:text-white duration-300 ease-in-out"></i>
-                    </a>
+<body class="flex h-screen overflow-hidden bg-gray-900">
+  <header
+    class="flex items-center justify-between p-4 flex-col bg-[#FFF1E6] w-[5%] min-w-[70px] h-screen ring-1 ring-offset-black z-50 transition-all duration-500">
+    <nav class="flex flex-col justify-between items-center mt-5 w-full h-full">
+      <div onclick="resetLayout()" title="Kembali ke Beranda"
+        class="kaushan-script-regular text-[28px] hover:text-black/75 cursor-pointer transition-all duration-300 ease-in-out hover:scale-110 hover:-skew-x-10">
+        AA
+      </div>
+      <div class="sosmed flex flex-col items-center justify-center w-12 -mb-4">
+        <div
+          class="pembatas group bg-white/25 ring-1 group ring-black w-14 h-14 mb-2 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out">
+          <a href="https://www.instagram.com/taya_asakura/"><i
+              class="fa-brands fa-instagram text-2xl group-hover:text-white group-hover:rotate-5 group-hover:scale-105 transition-all duration-300"></i>
+          </a>
+        </div>
+        <div
+          class="pembatas group bg-white/25 ring-1 ring-black w-14 h-14 mb-2 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out">
+          <a href="https://www.linkedin.com/in/attaya-arkarna-284099387/"><i
+              class="fa-brands fa-linkedin text-2xl group-hover:text-white group-hover:rotate-5 transition-all duration-300"></i></a>
+        </div>
+        <div
+          class="pembatas group bg-white/25 ring-1 ring-black w-14 h-14 mb-2 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out">
+          <a href="https://github.com/tyakura"><i
+              class="fa-brands fa-github text-2xl group-hover:text-white group-hover:rotate-5 transition-all duration-300"></i></a>
+        </div>
+        <div
+          class="pembatas group bg-white/25 ring-1 ring-black w-14 h-14 mb-4 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out">
+          <a href="https://www.facebook.com/profile.php?id=100093831633257&locale=id_ID"><i
+              class="fa-brands fa-facebook text-2xl group-hover:text-white transition-all duration-300"></i></a>
+        </div>
+        <div class="pembatas w-8 h-0.5 bg-black rounded-full"></div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="w-[95%] overflow-hidden relative">
+    <section class="flex w-full h-screen transition-all duration-700 ease-in-out" id="slider">
+      <main id="hero"
+        class="bg-[url(/src/Igtaya.png)] bg-cover flex-1 transition-all duration-700 ease-in-out w-full h-screen p-8 pl-16 opacity-100 overflow-hidden relative">
+        <div class="absolute inset-0 bg-gradient-r from-black/60 to-transparent"></div>
+        <div class="teks flex flex-col items-start justify-end h-full relative z-10 pb-10">
+          <h1
+            class="text-[96px] font-semibold text-gray-50 mb-4 font-montserrat leading-[1.1] tracking-tight transform transition-transform duration-700 translate-y-0 hero-text">
+            I'M ATTAYA <br />ARKARNA
+          </h1>
+          <h2
+            class="text-gray-50 text-[30px] font-semibold space-mono-regular leading-10 transform transition-transform duration-700 translate-y-0 hero-text delay-100">
+            I'm a student
+            <span class="write bg-[#FFF1E6] text-black px-2 py-1 rounded-sm"></span>
+            <br />From Madinatul Qur'an
+          </h2>
+        </div>
+      </main>
+
+      <div onclick="openSection(this)"
+        class="section flex w-[70px] ring-1 ring-offset-black flex-none bg-[#FFF1E6] h-screen shrink-0 cursor-pointer transition-all duration-700 ease-in-out relative overflow-hidden group hover:brightness-110">
+        <header
+          class="section-header absolute left-0 top-0 h-screen w-full flex flex-col items-center justify-between pt-8 pb-12 ring-1 ring-offset-black/20 space-mono-regular transition-opacity duration-500 z-20">
+          <h2 class="text-black/75 text-xl font-bold">O1</h2>
+          <h1 class="text-black/75 -rotate-90 text-3xl tracking-widest whitespace-nowrap">
+            About
+          </h1>
+        </header>
+        <main
+          class="main-section absolute inset-0 w-full h-screen bg-[#FFF1E6] flex flex-col items-center justify-center opacity-0 scale-95 pointer-events-none transition-all duration-700 ease-out z-10">
+          <div class="max-w-4xl p-12 flex flex-col items-center">
+            <div class="main">
+              <h1
+                class="text-[30px] text-black space-mono-bold transform -translate-y-10 transition-transform duration-700 title-anim font-space-mono font my-4">
+                ABOUT ME
+              </h1>
+              <hr />
+              <div class="flex mt-8 gap-12">
+                <div class="swiper w-[700px]">
+                  <div class="img swiper-wrapper h-full flex ring-1 ring-offset-black overflow-hidden">
+                    <img src="/src/Igtaya.png" alt="attaya" class="swiper-slide w-full h-full object-cover" />
+                    <img src="https://img.freepik.com/free-psd/3d-rendered-html-file-icon_84443-57041.jpg" alt="attaya"
+                      class="swiper-slide w-full h-full object-cover" />
+                  </div>
+                  <div class="flex gap-2">
+                    <div class="button-prev">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="button-next">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
                 </div>
-                <div
-                    class="pembatas group bg-white/25 ring-1 ring-black w-18 h-18 flex items-center justify-center hover:bg-black duration-200 ease-in-out ">
-                    <a href="https://www.linkedin.com/in/attaya-arkarna-284099387/"><i
-                            class="fa-brands fa-linkedin text-3xl m-4 hover:scale-107 hover:text-white group-hover:text-white duration-300 ease-in-out"></i></a>
+                <div class="teks flex flex-col">
+                  <h1 class="text-3xl font-montserrat font-semibold space-mono-bold">
+                    Attaya Arkarna
+                  </h1>
+                  <hr class="w-[10%] my-1" />
+                  <h2 class="text-lg text-black/50 space-mono-medium">
+                    Student Software Engineer
+                  </h2>
+                  <hr class="mt-8 mb-2" />
+                  <p class="text-black text-lg leading-relaxed opacity-90">
+                    Halo, ini adalah bagian tentang saya. Area ini sekarang
+                    jauh lebih luas sehingga informasi portofolio akan
+                    terlihat sangat jelas dan rapi.
+                  </p>
+
+                  <button class="button bg-black my-4 w-[30%] h-12 text-white rounded-full">Download CV</button>
+
+                  <div class="flex gap-2">
+                    <button class="button-prev w-10 h-10 ring hover:scale-110">
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="button-next w-10 h-10 ring"><i class="fa-solid fa-arrow-right"></i></button>
+                  
+                  </div>
                 </div>
-                <div
-                    class="pembatas group bg-white/25 ring-1 ring-black w-18 h-18 flex items-center justify-center hover:bg-black duration-200 ease-in-out">
-                    <a href="https://github.com/tyakura"><i
-                            class="fa-brands fa-github text-3xl m-4 hover:scale-105 hover:text-white group-hover:text-white duration-300 ease-in-out"></i></a>
-                </div>
-                <div
-                    class="pembatas group bg-white/25 ring-1 ring-black w-18 h-18 flex items-center justify-center hover:bg-black duration-200 ease-in-out">
-                    <a href="https://www.facebook.com/profile.php?id=100093831633257&locale=id_ID "><i
-                            class="fa-brands fa-facebook text-3xl m-4 hover:scale-105 hover:text-white group-hover:text-white duration-300 ease-in-out"></i></a>
-                </div>
-                <div class="pembatas w-14 h-0.5 bg-black"></div>
+              </div>
             </div>
-        </nav>
-    </header>
-    <div class="w-[95%] overflow-hidden">
-    <section class="flex w-full h-screen transition-transform duration-500 ease-in-out"  id="slider">
-        <main id="hero" class="bg-[url(/src/Igtaya.png)] bg-cover flex-3 transition-all duration-700 ease-in-out w-full h-screen p-8 pl-16">
-            <div class="teks flex flex-col items-start justify-end h-full">
-                <h1 class="text-[96px] font-semibold text-gray-50 mb-4 font-montserrat leading-24">IM ATTAYA <br>ARKARNA
-                </h1>
-                <h2 class="text-gray-50 text-[30px] font-semibold space-mono-regular leading-10">
-                    Im a student <span class="write bg-[#FFF1E6] text-black "></span>
-                    <br>From Madinatul Qur'an
-                </h2>
-            </div>
+          </div>
         </main>
-        <!-- bagian section -->
-    <div onclick="openSection(this)" class="section flex flex-[1] bg-amber-500 h-screen shrink-0 transition-all duration-500">
+      </div>
+
+      <div onclick="openSection(this)"
+        class="section flex w-[70px] ring-1 ring-offset-black flex-none bg-[#FFF1E6] h-screen shrink-0 cursor-pointer transition-all duration-700 ease-in-out relative overflow-hidden group hover:brightness-110">
         <header
-            class=" flex flex-col items-center justify-between pt-8 pb-12 ring-1 ring-offset-black space-mono-regular">
-            <h2 class="text-gray-50 text-xl">O1</h2>
-            <h1 class="text-gray-50 -rotate-90 text-2xl">About</h1>
+          class="section-header absolute left-0 top-0 h-screen w-full flex flex-col items-center justify-between pt-8 pb-24 ring-1 ring-offset-black/20 space-mono-regular transition-opacity duration-500 z-20">
+          <h2 class="text-black/75 text-xl font-bold">O2</h2>
+          <h1 class="text-black/75 -rotate-90 text-3xl tracking-widest whitespace-nowrap">
+            Portfolio
+          </h1>
         </header>
-        <main class="main-section hidden w-full h-screen bg-amber-500  items-center justify-center">
-            <h1 class="text-[124px] text-gray-900">halo</h1>
+        <main
+          class="main-section absolute inset-0 w-full h-screen bg-[#FFF1E6] flex flex-col items-center justify-center opacity-0 scale-95 pointer-events-none transition-all duration-700 ease-out z-10">
+          <h1
+            class="text-[80px] text-white font-montserrat font-bold transform -translate-y-10 transition-transform duration-700 title-anim">
+            My Work
+          </h1>
         </main>
-    </div>
-    <div onclick="openSection(this)" class="section flex flex-[1] bg-blue-500 h-screen shrink-0 transition-all duration-500">
+      </div>
+
+
+      <div onclick="openSection(this)"
+        class="section flex w-[70px] ring-1 ring-offset-black flex-none bg-[#FFF1E6] h-screen shrink-0 cursor-pointer transition-all duration-700 ease-in-out relative overflow-hidden group hover:brightness-110">
         <header
-            class="header h-screen flex flex-col items-center justify-between pt-8 pb-18 ring-1 ring-offset-black space-mono-regular">
-            <h2 class="text-gray-50 text-xl">O2</h2>
-            <h1 class="text-gray-50 -rotate-90 text-2xl">Portfolio</h1>
+          class="section-header absolute left-0 top-0 h-screen w-full flex flex-col items-center justify-between pt-8 pb-32 ring-1 ring-offset-black/20 space-mono-regular transition-opacity duration-500 z-20">
+          <h2 class="text-black/75 text-xl font-bold">O3</h2>
+          <h1 class="text-black/75 -rotate-90 text-3xl tracking-widest whitespace-nowrap">
+            Certificates
+          </h1>
         </header>
-    </div>
-    <div onclick="openSection(this)" class="section flex flex-[1] bg-green-300 w-full h-screen shrink-0 transition-all duration-500 ">
+        <main
+          class="main-section absolute inset-0 w-full h-screen bg-[#FFF1E6] flex flex-col items-center justify-center opacity-0 scale-95 pointer-events-none transition-all duration-700 ease-out z-10">
+          <h1
+            class="text-[80px] text-white font-montserrat font-bold transform -translate-y-10 transition-transform duration-700 title-anim">
+            Achievements
+          </h1>
+        </main>
+      </div>
+
+      <div onclick="openSection(this)"
+        class="section flex w-[70px] ring-1 ring-offset-black flex-none bg-[#FFF1E6] h-screen shrink-0 cursor-pointer transition-all duration-700 ease-in-out relative overflow-hidden group hover:brightness-110">
         <header
-            class="h-screen flex flex-col items-center justify-between pt-8 pb-12 ring-1 ring-offset-black space-mono-regular">
-            <h2 class="text-gray-50 text-xl">O3</h2>
-            <h1 class="text-gray-50 -rotate-90 text-2xl">Skills</h1>
+          class="section-header absolute left-0 top-0 h-screen w-full flex flex-col items-center justify-between pt-8 pb-18 ring-1 ring-offset-black/20 space-mono-regular transition-opacity duration-500 z-20">
+          <h2 class="text-black/75 text-xl font-bold">O4</h2>
+          <h1 class="text-black/75 -rotate-90 text-3xl tracking-widest whitespace-nowrap">
+            Contact
+          </h1>
         </header>
-    </div>
-    <div onclick="openSection(this)" class="section flex flex-[1] bg-red-500 w-full h-screen shrink-0 transition-all duration-500">
-        <header
-            class="h-screen flex flex-col items-center justify-between pt-8 pb-22 ring-1 ring-offset-black space-mono-regular">
-            <h2 class="text-gray-50 text-xl">O4</h2>
-            <h1 class="text-gray-50 -rotate-90 text-2xl">Certificates</h1>
-        </header>
-    </div>
-    <div onclick="openSection(this)" class="section flex flex-[1] bg-purple-500 w-full h-screen shrink-0 transition-all duration-500">
-        <header class="h-screen flex flex-col items-center justify-between pt-8 pb-14 ring-1 ring-offset-black space-mono-regular">
-            <h2 class="text-gray-50">O5</h2>
-            <h1 class="text-gray-50 -rotate-90 text-2xl">Contact</h1>
-        </header>
-    </div>
+        <main
+          class="main-section absolute inset-0 w-full h-screen bg-[#FFF1E6] flex flex-col items-center justify-center opacity-0 scale-95 pointer-events-none transition-all duration-700 ease-out z-10">
+          <h1
+            class="text-[80px] text-white font-montserrat font-bold transform -translate-y-10 transition-transform duration-700 title-anim">
+            Get in Touch
+          </h1>
+        </main>
+      </div>
+    </section>
+  </div>
 
-</section>
-</div>
+  <script src="/src/jquery-3.6.4.min.js"></script>
+  <script src="/src/plugins.js"></script>
+  <script src="/src/main.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-    <script src="/src/jquery-3.6.4.min.js"></script>
-    <script src="/src/plugins.js"></script>
-    <script src="/src/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
-    </script>
-    <!-- https://www.youtube.com/watch?v=qEcXe51-ZTw -->
-    <script>
-
-        var typed = new Typed(".write", {
-            strings: ["Web Developer", "Web Designer", "Front End Developer", "Backend Developer"],
-            typeSpeed: 150,
-            backSpeed: 100,
-            loop: true
-        })
-
-function openSection(section) {
-
-    const hero = document.getElementById("hero");
-    const sections = document.querySelectorAll(".section");
-    const header = document.querySelector(".header");
-    const main = document.querySelector(".main-section");
-
-    // Hero hilang total
-    hero.classList.remove("flex-[3]");
-    hero.classList.add("hidden");
-    hero.style.padding = "0";
-
-    // Reset semua section
-    sections.forEach(sec => {
-        sec.classList.remove("flex-[8]");
-        sec.classList.add("flex-[1]");
-        main.classList.remove("hidden");
-        main.classList.add("flex");
+  <script>
+    var typed = new Typed(".write", {
+      strings: [
+        "Web Developer",
+        "Web Designer",
+        "Front End Developer",
+        "Backend Developer",
+      ],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true,
     });
 
-    // Expand section yang diklik
-    section.classList.remove("flex-[1]");
-    section.classList.add("flex-[8]");
-  
+    function openSection(clickedSection) {
+      const hero = document.getElementById("hero");
+      const sections = document.querySelectorAll(".section");
 
+      // 1. Sembunyikan Hero Section
+      const heroTexts = hero.querySelectorAll(".hero-text");
+      heroTexts.forEach((txt) =>
+        txt.classList.add("translate-y-10", "opacity-0"),
+      );
 
-}
-function resetLayout() {
+      // Hero memudar dan menyempit
+      hero.classList.remove("flex-1", "opacity-100", "p-8", "pl-16");
+      hero.classList.add("w-0", "flex-[0]", "opacity-0", "px-0");
 
-    const hero = document.getElementById("hero");
-    const sections = document.querySelectorAll(".section");
-    const header = document.querySelector(".header");
-    const main = document.querySelector(".main-section");
+      // 2. Tutup semua section menjadi kotak kecil di samping
+      sections.forEach((sec) => {
+        sec.classList.remove("flex-1");
+        sec.classList.add(
+          "w-[70px]",
+          "flex-none",
+          "cursor-pointer",
+          "hover:brightness-110",
+        );
 
-    hero.classList.remove("hidden");
-    hero.classList.add("flex-[3]", "block");
-    hero.style.padding = "2rem";
+        const header = sec.querySelector(".section-header");
+        if (header) {
+          header.classList.remove("opacity-0", "pointer-events-none");
+          header.classList.add("opacity-100");
+        }
 
-    sections.forEach(sec => {
-        sec.classList.remove("flex-[8]");
-        sec.classList.add("flex-[1]");
-        main.classList.remove("flex");
-        main.classList.add("hidden", "block");
-    });
+        const mainContent = sec.querySelector(".main-section");
+        if (mainContent) {
+          mainContent.classList.remove(
+            "opacity-100",
+            "scale-100",
+            "pointer-events-auto",
+          );
+          mainContent.classList.add(
+            "opacity-0",
+            "scale-95",
+            "pointer-events-none",
+          );
 
-   
-    
-}
-    </script>
+          const title = mainContent.querySelector(".title-anim");
+          if (title)
+            title.classList.replace("translate-y-0", "-translate-y-10");
+        }
+      });
+
+      // 3. Buka section yang diklik secara penuh (seperti Hero di awal)
+      clickedSection.classList.remove(
+        "w-[70px]",
+        "flex-none",
+        "cursor-pointer",
+        "hover:brightness-110",
+      );
+      clickedSection.classList.add("flex-1");
+
+      const activeHeader = clickedSection.querySelector(".section-header");
+      if (activeHeader) {
+        activeHeader.classList.remove("opacity-100");
+        activeHeader.classList.add("opacity-0", "pointer-events-none");
+      }
+
+      const activeMain = clickedSection.querySelector(".main-section");
+      if (activeMain) {
+        setTimeout(() => {
+          activeMain.classList.remove(
+            "opacity-0",
+            "scale-95",
+            "pointer-events-none",
+          );
+          activeMain.classList.add(
+            "opacity-100",
+            "scale-100",
+            "pointer-events-auto",
+          );
+
+          const title = activeMain.querySelector(".title-anim");
+          if (title)
+            title.classList.replace("-translate-y-10", "translate-y-0");
+        }, 400);
+      }
+    }
+
+    function resetLayout() {
+      const hero = document.getElementById("hero");
+      const sections = document.querySelectorAll(".section");
+
+      // 1. Kembalikan ukuran Hero menjadi sangat lebar (Penuh)
+      hero.classList.remove("w-0", "flex-[0]", "opacity-0", "px-0");
+      hero.classList.add("flex-1", "opacity-100", "p-8", "pl-16");
+
+      // Animasi teks Hero muncul kembali
+      setTimeout(() => {
+        const heroTexts = hero.querySelectorAll(".hero-text");
+        heroTexts.forEach((txt) =>
+          txt.classList.remove("translate-y-10", "opacity-0"),
+        );
+      }, 300);
+
+      // 2. Reset semua section kembali ke kotak kecil di samping kanan
+      sections.forEach((sec) => {
+        sec.classList.remove("flex-1");
+        sec.classList.add(
+          "w-[70px]",
+          "flex-none",
+          "cursor-pointer",
+          "hover:brightness-110",
+        );
+
+        const header = sec.querySelector(".section-header");
+        if (header) {
+          header.classList.remove("opacity-0", "pointer-events-none");
+          header.classList.add("opacity-100");
+        }
+
+        const mainContent = sec.querySelector(".main-section");
+        if (mainContent) {
+          mainContent.classList.remove(
+            "opacity-100",
+            "scale-100",
+            "pointer-events-auto",
+          );
+          mainContent.classList.add(
+            "opacity-0",
+            "scale-95",
+            "pointer-events-none",
+          );
+
+          const title = mainContent.querySelector(".title-anim");
+          if (title)
+            title.classList.replace("translate-y-0", "-translate-y-10");
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>

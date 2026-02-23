@@ -12,6 +12,18 @@
   font-style: normal;
 }
 
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-medium {
+  font-family: "Space Mono", monospace;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .kaushan-script-regular {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
