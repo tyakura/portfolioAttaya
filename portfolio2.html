@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio-attaya2</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="/src/main.js"></script>
+</head>
+
+<body class="flex h-screen overflow-hidden">
+    <header
+        class="flex items-center justify-between p-4 flex-col bg-[#FFF1E6] w-[5%] h-screen ring-1 ring-offset-black z-100 ">
+        <nav class="flex flex-col justify-between items-center mt-5 w-full h-full">
+            <div onclick="resetLayout()"
+                class="kaushan-script-regular text-[28px] hover:text-black/75 duration-100 ease-in-out -translate-x-1 hover:translate-x-1 hover:-skew-x-10 ">
+                AA</div>
+            <div class="sosmed flex flex-col items-center justify-center w-12 -mb-4">
+                <div
+                    class="pembatas group bg-white/25 ring-1 ring-black w-18 h-18 flex items-center justify-center  hover:bg-black duration-200 ease-in-out">
+                    <a href="https://www.instagram.com/taya_asakura/" class=""><i
+                            class="fa-brands fa-instagram text-3xl m-4 hover:scale-105 hover:text-white group-hover:text-white duration-300 ease-in-out"></i>
+                    </a>
+                </div>
+                <div
+                    class="pembatas group bg-white/25 ring-1 ring-black w-18 h-18 flex items-center justify-center hover:bg-black duration-200 ease-in-out ">
+                    <a href="https://www.linkedin.com/in/attaya-arkarna-284099387/"><i
+                            class="fa-brands fa-linkedin text-3xl m-4 hover:scale-107 hover:text-white group-hover:text-white duration-300 ease-in-out"></i></a>
+                </div>
+                <div
+                    class="pembatas group bg-white/25 ring-1 ring-black w-18 h-18 flex items-center justify-center hover:bg-black duration-200 ease-in-out">
+                    <a href="https://github.com/tyakura"><i
+                            class="fa-brands fa-github text-3xl m-4 hover:scale-105 hover:text-white group-hover:text-white duration-300 ease-in-out"></i></a>
+                </div>
+                <div
+                    class="pembatas group bg-white/25 ring-1 ring-black w-18 h-18 flex items-center justify-center hover:bg-black duration-200 ease-in-out">
+                    <a href="https://www.facebook.com/profile.php?id=100093831633257&locale=id_ID "><i
+                            class="fa-brands fa-facebook text-3xl m-4 hover:scale-105 hover:text-white group-hover:text-white duration-300 ease-in-out"></i></a>
+                </div>
+                <div class="pembatas w-14 h-0.5 bg-black"></div>
+            </div>
+        </nav>
+    </header>
+    <div class="w-[95%] overflow-hidden">
+    <section class="flex w-full h-screen transition-transform duration-500 ease-in-out"  id="slider">
+        <main id="hero" class="bg-[url(/src/Igtaya.png)] bg-cover flex-3 transition-all duration-700 ease-in-out w-full h-screen p-8 pl-16">
+            <div class="teks flex flex-col items-start justify-end h-full">
+                <h1 class="text-[96px] font-semibold text-gray-50 mb-4 font-montserrat leading-24">IM ATTAYA <br>ARKARNA
+                </h1>
+                <h2 class="text-gray-50 text-[30px] font-semibold space-mono-regular leading-10">
+                    Im a student <span class="write bg-[#FFF1E6] text-black "></span>
+                    <br>From Madinatul Qur'an
+                </h2>
+            </div>
+        </main>
+        <!-- bagian section -->
+    <div onclick="openSection(this)" class="section flex flex-[1] bg-amber-500 h-screen shrink-0 transition-all duration-500">
+        <header
+            class=" flex flex-col items-center justify-between pt-8 pb-12 ring-1 ring-offset-black space-mono-regular">
+            <h2 class="text-gray-50 text-xl">O1</h2>
+            <h1 class="text-gray-50 -rotate-90 text-2xl">About</h1>
+        </header>
+        <main class="main-section hidden w-full h-screen bg-amber-500  items-center justify-center">
+            <h1 class="text-[124px] text-gray-900">halo</h1>
+        </main>
+    </div>
+    <div onclick="openSection(this)" class="section flex flex-[1] bg-blue-500 h-screen shrink-0 transition-all duration-500">
+        <header
+            class="header h-screen flex flex-col items-center justify-between pt-8 pb-18 ring-1 ring-offset-black space-mono-regular">
+            <h2 class="text-gray-50 text-xl">O2</h2>
+            <h1 class="text-gray-50 -rotate-90 text-2xl">Portfolio</h1>
+        </header>
+    </div>
+    <div onclick="openSection(this)" class="section flex flex-[1] bg-green-300 w-full h-screen shrink-0 transition-all duration-500 ">
+        <header
+            class="h-screen flex flex-col items-center justify-between pt-8 pb-12 ring-1 ring-offset-black space-mono-regular">
+            <h2 class="text-gray-50 text-xl">O3</h2>
+            <h1 class="text-gray-50 -rotate-90 text-2xl">Skills</h1>
+        </header>
+    </div>
+    <div onclick="openSection(this)" class="section flex flex-[1] bg-red-500 w-full h-screen shrink-0 transition-all duration-500">
+        <header
+            class="h-screen flex flex-col items-center justify-between pt-8 pb-22 ring-1 ring-offset-black space-mono-regular">
+            <h2 class="text-gray-50 text-xl">O4</h2>
+            <h1 class="text-gray-50 -rotate-90 text-2xl">Certificates</h1>
+        </header>
+    </div>
+    <div onclick="openSection(this)" class="section flex flex-[1] bg-purple-500 w-full h-screen shrink-0 transition-all duration-500">
+        <header class="h-screen flex flex-col items-center justify-between pt-8 pb-14 ring-1 ring-offset-black space-mono-regular">
+            <h2 class="text-gray-50">O5</h2>
+            <h1 class="text-gray-50 -rotate-90 text-2xl">Contact</h1>
+        </header>
+    </div>
+
+</section>
+</div>
+
+    <script src="/src/jquery-3.6.4.min.js"></script>
+    <script src="/src/plugins.js"></script>
+    <script src="/src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+    </script>
+    <!-- https://www.youtube.com/watch?v=qEcXe51-ZTw -->
+    <script>
+
+        var typed = new Typed(".write", {
+            strings: ["Web Developer", "Web Designer", "Front End Developer", "Backend Developer"],
+            typeSpeed: 150,
+            backSpeed: 100,
+            loop: true
+        })
+
+function openSection(section) {
+
+    const hero = document.getElementById("hero");
+    const sections = document.querySelectorAll(".section");
+    const header = document.querySelector(".header");
+    const main = document.querySelector(".main-section");
+
+    // Hero hilang total
+    hero.classList.remove("flex-[3]");
+    hero.classList.add("hidden");
+    hero.style.padding = "0";
+
+    // Reset semua section
+    sections.forEach(sec => {
+        sec.classList.remove("flex-[8]");
+        sec.classList.add("flex-[1]");
+        main.classList.remove("hidden");
+        main.classList.add("flex");
+    });
+
+    // Expand section yang diklik
+    section.classList.remove("flex-[1]");
+    section.classList.add("flex-[8]");
+  
+
+
+}
+function resetLayout() {
+
+    const hero = document.getElementById("hero");
+    const sections = document.querySelectorAll(".section");
+    const header = document.querySelector(".header");
+    const main = document.querySelector(".main-section");
+
+    hero.classList.remove("hidden");
+    hero.classList.add("flex-[3]", "block");
+    hero.style.padding = "2rem";
+
+    sections.forEach(sec => {
+        sec.classList.remove("flex-[8]");
+        sec.classList.add("flex-[1]");
+        main.classList.remove("flex");
+        main.classList.add("hidden", "block");
+    });
+
+   
+    
+}
+    </script>
+</body>
+
+</html>
