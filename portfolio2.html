@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +9,7 @@
   <script src="/src/main.js"></script>
 </head>
 
-<body class="flex h-screen overflow-hidden bg-gray-900">
+<body class="flex h-screen overflow-y-scroll bg-gray-900">
   <header
     class="flex items-center justify-between p-4 flex-col bg-[#FFF1E6] w-[5%] min-w-[70px] h-screen ring-1 ring-offset-black z-50 transition-all duration-500">
     <nav class="flex flex-col justify-between items-center mt-5 w-full h-full">
@@ -48,9 +47,9 @@
   <div class="w-[95%] overflow-hidden relative">
     <section class="flex w-full h-screen transition-all duration-700 ease-in-out" id="slider">
       <main id="hero"
-        class="bg-[url(/src/Igtaya.png)] bg-cover flex-1 transition-all duration-700 ease-in-out w-full h-screen p-8 pl-16 opacity-100 overflow-hidden relative">
+        class="bg-[url(/src/img/Igtaya.png)] bg-cover bg-opacity-50 flex-1 transition-all duration-700 ease-in-out w-full h-screen p-8 pl-16 opacity-100 overflow-hidden relative">
         <div class="absolute inset-0 bg-gradient-r from-black/60 to-transparent"></div>
-        <div class="teks flex flex-col items-start justify-end h-full relative z-10 pb-10">
+        <div class="teks flex flex-col items-start justify-end h-full relative z-10">
           <h1
             class="text-[96px] font-semibold text-gray-50 mb-4 font-montserrat leading-[1.1] tracking-tight transform transition-transform duration-700 translate-y-0 hero-text">
             I'M ATTAYA <br />ARKARNA
@@ -58,9 +57,12 @@
           <h2
             class="text-gray-50 text-[30px] font-semibold space-mono-regular leading-10 transform transition-transform duration-700 translate-y-0 hero-text delay-100">
             I'm a student
-            <span class="write bg-[#FFF1E6] text-black px-2 py-1 rounded-sm"></span>
+            <span class="write bg-[#FFF1E6] text-black py-1 "></span>
             <br />From Madinatul Qur'an
           </h2>
+          <button
+            class="button bg-[#FFF1E6] my-4 w-fit px-6 py-3 mt-4 text-xl text-black rounded-full space-mono-bold hero-text hover:bg-black hover:text-white transition-all duration-300 ease-in-out">Download
+            CV</button>
         </div>
       </main>
 
@@ -73,58 +75,108 @@
             About
           </h1>
         </header>
-        <main
-          class="main-section absolute inset-0 w-full h-screen bg-[#FFF1E6] flex flex-col items-center justify-center opacity-0 scale-95 pointer-events-none transition-all duration-700 ease-out z-10">
+        <main id="about-scroll-wrapper"
+          class="main-section absolute inset-0 w-full h-screen bg-[#FFF1E6] flex flex-col items-center justify-center  opacity-0 scale-95 pointer-events-none transition-all duration-700 ease-out z-10">
           <div class="max-w-4xl p-12 flex flex-col items-center">
-            <div class="main">
-              <h1
-                class="text-[30px] text-black space-mono-bold transform -translate-y-10 transition-transform duration-700 title-anim font-space-mono font my-4">
-                ABOUT ME
-              </h1>
-              <hr />
-              <div class="flex mt-8 gap-12">
-                <div class="swiper w-[700px]">
-                  <div class="img swiper-wrapper h-full flex ring-1 ring-offset-black overflow-hidden">
-                    <img src="/src/Igtaya.png" alt="attaya" class="swiper-slide w-full h-full object-cover" />
-                    <img src="https://img.freepik.com/free-psd/3d-rendered-html-file-icon_84443-57041.jpg" alt="attaya"
-                      class="swiper-slide w-full h-full object-cover" />
-                  </div>
-                  <div class="flex gap-2">
-                    <div class="button-prev">
-                      <i class="fa-solid fa-arrow-left"></i>
-                    </div>
-                    <div class="button-next">
-                      <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="teks flex flex-col">
-                  <h1 class="text-3xl font-montserrat font-semibold space-mono-bold">
-                    Attaya Arkarna
-                  </h1>
-                  <hr class="w-[10%] my-1" />
-                  <h2 class="text-lg text-black/50 space-mono-medium">
-                    Student Software Engineer
-                  </h2>
-                  <hr class="mt-8 mb-2" />
-                  <p class="text-black text-lg leading-relaxed opacity-90">
-                    Halo, ini adalah bagian tentang saya. Area ini sekarang
-                    jauh lebih luas sehingga informasi portofolio akan
-                    terlihat sangat jelas dan rapi.
-                  </p>
+            <div id="content-about" class="main ">
+                <h1
+                  class="text-[30px] text-black space-mono-bold transform -translate-y-10 transition-transform duration-700 title-anim font-space-mono font my-4">
+                  ABOUT ME
+                </h1>
+                <hr />
+                <div class="flex mt-8 gap-12 ">
+                  <div class="swiper w-[700px]">
+                    <div
+                      class="img swiper-wrapper w-[400px!important] h-[400px!important] flex ring-1 bg-black ring-offset-black overflow-hidden">
 
-                  <button class="button bg-black my-4 w-[30%] h-12 text-white rounded-full">Download CV</button>
+                      <img src="/src/img/igtaya2.jpeg" alt="attaya" class="swiper-slide object-cover opacity-50" />
+                    </div>
 
-                  <div class="flex gap-2">
-                    <button class="button-prev w-10 h-10 ring hover:scale-110">
-                      <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                    <button class="button-next w-10 h-10 ring"><i class="fa-solid fa-arrow-right"></i></button>
-                  
+                  </div>
+                  <div class="teks flex flex-col w-full">
+                    <h1 class="text-3xl font-montserrat font-semibold space-mono-bold">
+                      Attaya Arkarna
+                    </h1>
+                    <hr class="w-[10%] my-1" />
+                    <h2 class="text-lg text-black/50 space-mono-medium">
+                      Student Software Engineer
+                    </h2>
+                    <hr class="mt-8 mb-2" />
+                    <p class="text-black text-lg leading-relaxed opacity-90 text-justify ">
+                      I am a web development student focused on building modern, responsive, and user-centered websites.
+                      I continuously sharpen my Front-End and Back-End skills to deliver impactful and high-quality
+                      digital experiences.
+                    </p>
+                    <!-- <div class="learn mt-8 w-[50%]">
+                      <h1 class="text-xl font-montserrat font-semibold space-mono-bold">What I Learn</h1>
+                      <div class="flex">
+                        <div class="html w-40 h-16 bg-black rounded-2xl">
+                          <i class="fa-"></i>
+                        </div>
+                        <div class="css w-40 h-16 bg-black rounded-2xl">
+                          
+                        </div>
+                        <div class="js w-40 h-16 bg-black rounded-2xl">
+                          
+                        </div>
+                      </div>
+                    </div> -->
+                    <hr class="mt-16 mb-4">
+                    <div id="content-about"
+                      class="w-full transition-all duration-500 transform translate-y-0 opacity-100 ">
+                      <button onclick=" switchContent('skill')"
+                      class="space-mono-regular text-xl hover:translate-y-2 space-mono-bold duration-300 w-fit group flex flex-col absolute -bottom-35 right-10 items-center">
+                      See More <span class=" transition-all duration-300"><i class="fa-solid fa-chevron-down"></i></span>
+                      </button>
+                    </div>
+                   
                   </div>
                 </div>
               </div>
-            </div>
+          </div>
+          <div class="Skill">
+            <div id="content-skill"
+              class="absolute inset-0 w-full h-screen bg-[#FFF1E6] flex flex-col items-center justify-center p-12 opacity-0 translate-y-10 pointer-events-none transition-all duration-700 ease-out z-10">
+              <div class="max-w-4xl p-12 flex flex-col items-center">
+                <div id="content-skill" class="main ">
+                  
+                    <h1
+                      class="text-[30px] text-black space-mono-bold transform transition-transform duration-700 title-anim font-space-mono font my-2">
+                      MY SKILL
+                    </h1>
+                    <hr>
+                    <div class="flex mt-8 flex-col">
+                      <h1 class="flex items-center ">HTML  <span class="ml-auto">90%</span></h1>
+                      <div class="line w-[900px] flex items-center justify-start relative mt-2 mb-8">
+                        <span class="w-full h-[4px] bg-black absolute "></span>
+                        <span class="h-2 w-[90%] bg-red-500 z-1"></span>
+                      </div>
+                      <h1 class="flex items-center ">CSS <span class="ml-auto">50%</span></h1>
+                      <div class="line w-[900px] flex items-center justify-start relative mt-2 mb-8">
+                        <span class="w-full h-[4px] bg-black absolute "></span>
+                        <span class="h-2 w-[50%] bg-red-500 z-1"></span>
+                      </div>
+                      <h1 class="flex items-center ">JAVASCRIPT <span class="ml-auto">50%</span></h1>
+                      <div class="line w-[900px] flex items-center justify-start relative mt-2 mb-8">
+                        <span class="w-full h-[4px] bg-black absolute"></span>
+                        <span class="h-2 w-[50%] bg-red-500 z-1"></span>
+                      </div>
+                      <h1 class="flex items-center ">PHP <span class="ml-auto">70%</span></h1>
+                      <div class="line w-[900px] flex items-center justify-start relative mt-2 mb-8">
+                        <span class="w-full h-[4px] bg-black absolute"></span>
+                        <span class="h-2 w-[70%] bg-red-500 z-1"></span>
+                      </div>
+                    <hr class="w-full mt-8 mb-4">
+                      <div id="content-about"
+                      class="w-full transition-all duration-500 transform translate-y-0 opacity-100">
+                      <button onclick=" switchContent('about')"
+                      class="space-mono-regular text-xl hover:-translate-y-2 space-mono-bold duration-300 w-fit group flex flex-col absolute -bottom-22 right-2 items-center gap-2">
+                      Back to About <span class=" transition-all duration-300"><i class="fa-solid fa-chevron-up"></i></span>
+                      </button>
+                      </div>
+                    </div>
+                </div>
+              </div>
           </div>
         </main>
       </div>
@@ -339,6 +391,35 @@
             title.classList.replace("translate-y-0", "-translate-y-10");
         }
       });
+    }
+
+    function switchContent(target) {
+      const aboutBox = document.getElementById("content-about");
+      const skillBox = document.getElementById("content-skill");
+
+      if (target === 'skill') {
+        // 1. Fade Out About
+        aboutBox.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
+        aboutBox.classList.add("opacity-0", "-translate-y-10", "pointer-events-none");
+
+        // 2. Fade In Skill (Memberikan sedikit jeda agar terlihat bergantian)
+        setTimeout(() => {
+          skillBox.classList.remove("opacity-0", "translate-y-10", "pointer-events-none");
+          skillBox.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
+        }, 300); // Jeda 300ms
+      }
+
+      else if (target === 'about') {
+        // 1. Fade Out Skill
+        skillBox.classList.remove("opacity-100", "translate-y-0", "pointer-events-auto");
+        skillBox.classList.add("opacity-0", "translate-y-10", "pointer-events-none");
+
+        // 2. Fade In About
+        setTimeout(() => {
+          aboutBox.classList.remove("opacity-0", "-translate-y-10", "pointer-events-none");
+          aboutBox.classList.add("opacity-100", "translate-y-0", "pointer-events-auto");
+        }, 300);
+      }
     }
   </script>
 </body>
