@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="src/img/igtaya3.jpeg" />
+    <link rel="icon" type="image/svg+xml" href="igtaya3.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio-attaya2</title>
      <link rel="stylesheet" href="src/style.css" />
@@ -12,7 +12,7 @@
 
 <body class="flex h-screen overflow-y-scroll bg-gray-900">
   <header
-    class="flex items-center justify-between md:p-4 p-2 flex-col bg-[#FFF1E6] md:w-[5%] w-[10%] md:min-w-[70px] min-w-[50px] h-screen ring-1 ring-offset-black z-50 transition-all duration-500">
+    class="flex items-center justify-between p-4 flex-col bg-[#FFF1E6] md:w-[5%] w-[10%] md:min-w-[70px] min-w-[50px] h-screen ring-1 ring-offset-black z-50 transition-all duration-500">
     <nav class="flex flex-col justify-between items-center mt-5 w-full h-full">
       <div onclick="resetLayout()" title="Kembali ke Beranda"
         class="kaushan-script-regular md:text-[28px] text-[20px] hover:text-black/75 cursor-pointer transition-all duration-300 ease-in-out hover:translate-x-1 hover:scale-105 hover:-skew-x-10">
@@ -48,7 +48,7 @@
 
   <div class="w-[95%] overflow-y-auto relative bg-[#FFF1E6]">
     <section id="hero"
-      class="bg-[url(/src/img/Igtaya.png)] bg-cover bg-center min-h-screen p-8 md:pl-16 pl-8 flex flex-col justify-end relative">
+      class="bg-[url(Igtaya.png)] bg-cover bg-center min-h-screen p-8 md:pl-16 pl-8 flex flex-col justify-end relative">
       <div class="absolute inset-0 bg-gradient from-black/60 to-transparent"></div>
       <div class="relative z-10 text-white">
         <h1 class="md:text-[96px] text-[40px] font-semibold leading-[1.1] tracking-tight font-montserrat">
@@ -74,7 +74,7 @@
         <hr class="border-black md:mb-10 mb-5" />
         <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
           <div class="md:w-[250px] md:h-[300px] w-[300px] h-[200px] shrink-0 bg-black overflow-hidden ring-1 ring-black ring-offset-4">
-            <img src="src/img/igtaya3.jpeg" alt="attaya" class="w-full h-full object-cover opacity-80" />
+            <img src="igtaya3.jpeg" alt="attaya" class="w-full h-full object-cover opacity-80" />
           </div>
           <div class="flex-1">
             <h1 class="md:text-[30px] text-[24px] font-bold mb- font-space-mono space-mono-bold">
@@ -128,22 +128,22 @@
 
           <div class="flex flex-col md:justify-start justify-center items-center gap-2 w-full md:w-64">
             <button onclick="showTab('tab-skill')"
-              class="tab-btn active-tab flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:bg-[url(src/img/igtaya.jpeg)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-3 ring-black mr-4 ease-in-out duration-1000 hover:text-white">
+              class="tab-btn active-tab flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:bg-[url(igtaya.jpeg)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-3 ring-black mr-4 ease-in-out duration-1000 hover:text-white">
               SKILL
             </button>
             <button onclick="showTab('tab-edukasi')"
-              class="tab-btn flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:bg-[url(src/img/igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-3 ring-black mt-2 mr-4 ease-in-out duration-1000 hover:text-white">
+              class="tab-btn flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:bg-[url(igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-3 ring-black mt-2 mr-4 ease-in-out duration-1000 hover:text-white">
               EDUCATION
             </button>
             <button onclick="showTab('tab-pengalaman')"
-              class="tab-btn flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:bg-[url(src/img/igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-3 ring-black mt-2    mr-4 ease-in-out duration-1000 hover:text-white">
+              class="tab-btn flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:bg-[url(igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-3 ring-black mt-2    mr-4 ease-in-out duration-1000 hover:text-white">
               EXPERIENCE
             </button>
           </div>
 
 
 
-          <div class="flex-1 p-8 relative ">
+          <div class="flex-1 md:p-8 py-8 px-2 relative ">
 
             <div id="tab-skill" class="tab-content">
               <h3 class="text-[30px] font-bold mb-4 space-mono-bold">Skills</h3>
@@ -231,14 +231,14 @@
       <div class="portfolio max-w-5xl mx-auto gap-6 w-full mt-16 mb-4 ">
         <h1 class="md:text-[40px] text-[20px] space-mono-bold">Portfolio</h1>
         <hr class="mt-4" />
-        <div class="web flex gap-8">
-          <div onclick="window.location.href='https://meowketplace2.vercel.app/index.html'" class="projek1 cursor-pointer ring-2 object-cover ring-black group w-[300px] h-[250px] bg-black ease-in-out duration-300 mt-10">
+        <div class="web flex flex-wrap md:gap-8 gap-4">
+          <div onclick="window.location.href='https://meowketplace2.vercel.app/index.html'" class="projek1 cursor-pointer ring-2 object-cover ring-black group md:w-[300px] w-[150px] md:h-[250px] h-[125px] bg-black ease-in-out duration-300 mt-10">
             <div class="grup1 relative rounded-md">
               <h1
                 class="text-3xl font-space-mono-bold absolute bottom-0 left-4 opacity-0 space-mono-bold text-white group-hover:opacity-100 hover:text-black group-hover:bottom-4 group-hover:left-4 ease-in-out duration-300">
                 Meowketplace<br><span class="text-xl space-mono-regular">Website for Cat</span></h1>
               <img src="src/img/meowketplaceweb.jpg" alt="meowketplace"
-                class="group-hover:opacity-50 ease-in-out duration-300 w-[300px] h-[250px] object-cover" />
+                class="group-hover:opacity-50 ease-in-out duration-300 md:w-[300px] w-[150px] md:h-[250px] h-[125px] object-cover" />
             </div>
        
           </div>
