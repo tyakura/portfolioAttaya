@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="src/img/igtaya3.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio-attaya2</title>
      <link rel="stylesheet" href="src/style.css" />
@@ -11,7 +11,7 @@
   </head>
 
 <body class="flex h-screen overflow-y-scroll bg-gray-900">
-  <header 
+  <header
     class="flex items-center justify-between md:p-4 p-2 flex-col bg-[#FFF1E6] md:w-[5%] w-[10%] md:min-w-[70px] min-w-[50px] h-screen ring-1 ring-offset-black z-50 transition-all duration-500">
     <nav class="flex flex-col justify-between items-center mt-5 w-full h-full">
       <div onclick="resetLayout()" title="Kembali ke Beranda"
@@ -55,13 +55,13 @@
           I'M ATTAYA <br />ARKARNA
         </h1>
         <h2 class="md:text-[30px] text-[20px] font-semibold mt-4 space-mono-regular leading-tight">
-          I'm a student
+          Experienced
           <span class="write bg-[#FFF1E6] text-black"></span> <br />From
           Madinatul Qur'an
         </h2>
         <button
           class="bg-[#FFF1E6] text-black md:px-6 md:py-3 py-2 px-4 mt-4 md:text-[18px] text-[14px] rounded-lg font-bold hover:bg-black hover:text-white transition-all">
-          Download CV
+          Contact Me
         </button>
       </div>
     </section>
@@ -74,7 +74,7 @@
         <hr class="border-black md:mb-10 mb-5" />
         <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
           <div class="md:w-[250px] md:h-[300px] w-[300px] h-[200px] shrink-0 bg-black overflow-hidden ring-1 ring-black ring-offset-4">
-            <img src="/src/img/igtaya3.jpeg" alt="attaya" class="w-full h-full object-cover opacity-80" />
+            <img src="src/img/igtaya3.jpeg" alt="attaya" class="w-full h-full object-cover opacity-80" />
           </div>
           <div class="flex-1">
             <h1 class="md:text-[30px] text-[24px] font-bold mb- font-space-mono space-mono-bold">
@@ -128,7 +128,7 @@
 
           <div class="flex flex-col md:justify-start justify-center items-center gap-2 w-full md:w-64">
             <button onclick="showTab('tab-skill')"
-              class="tab-btn active-tab flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:bg-[url(src/img/igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-3 ring-black mr-4 ease-in-out duration-1000 hover:text-white">
+              class="tab-btn active-tab flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:bg-[url(src/img/igtaya.jpeg)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-3 ring-black mr-4 ease-in-out duration-1000 hover:text-white">
               SKILL
             </button>
             <button onclick="showTab('tab-edukasi')"
@@ -143,7 +143,7 @@
 
 
 
-          <div class="flex-1 p-8 relative">
+          <div class="flex-1 p-8 relative ">
 
             <div id="tab-skill" class="tab-content">
               <h3 class="text-[30px] font-bold mb-4 space-mono-bold">Skills</h3>
@@ -176,20 +176,20 @@
               </div>
             </div>
 
-            <div id="tab-edukasi" class="tab-content hidden">
+            <div id="tab-edukasi" class="tab-content hidden space-mono-regular">
               <h3 class="text-[30px] font-bold space-mono-bold">Education History</h3>
               <hr class="border-black mt-4 mb-6">
               <ul class="space-y-4">
-                <li onclick="window.location.href='https://rabbaanii.sch.id/'"
+                <li 
                   class="pl-4 group flex items-center gap-4 ring-2 hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out ">
-                  <img src="src/img/logorb.png" alt="mq"
+                  <img src="src/img/logorb.png" alt="mq" onclick="window.location.href='https://rabbaanii.sch.id/'"
                     class="w-12 h-12 bg-white rounded-full my-2 hover:my-4 hover:shadow-lg hover:shadow-black hover:-rotate-10 cursor-pointer transition-all duration-300 ease-in-out">
                   <div class="tex">
                     <h4 class="font-bold group-hover:text-white transition-all duration-300 ease-in-out">SMP Rabbaani Islamic School</h4>
                     
                   </div>
                   <div class="time absolute right-12">
-                    <p class="text-2xl text-gray-400 ml-40 font-bold">2022 - 2025</p>
+                    <p class="text-2xl text-gray-400 ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">2022 - 2025</p>
                   </div>
                 </li>
                 <li 
@@ -203,15 +203,16 @@
                       Software Engineering Student</p>
                   </div>
                   <div class="time absolute right-12">
-                    <p class="text-2xl text-gray-400 ml-40 font-bold hover:text-gradientx-to-r from-red-500 to-blue-500 transition-all duration-300 ease-in-out">2026 - 2028</p>
+                    <p class="text-2xl text-gray-400 ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">2026 - 2028</p>
                   </div>
                 </li>
               </ul>
             </div>
 
             <div id="tab-pengalaman" class="tab-content hidden">
-              <h3 class="text-2xl font-bold mb-6">Experience</h3>
-              <ul class="space-y-4">
+              <h3 class="text-[30px] font-bold mb-6 space-mono-bold">Experience</h3>
+              <hr class="border-black mt-4 mb-6">
+              <ul class="space-y-4 space-mono-regular">
                 <li class="ring-1 ring-black p-4 flex items-center gap-4">
                   <i class="fa-brands fa-uikit text-[30px]" style="color: black;"></i>
                   <div class="tex">
@@ -230,14 +231,34 @@
       <div class="portfolio max-w-5xl mx-auto gap-6 w-full mt-16 mb-4 ">
         <h1 class="md:text-[40px] text-[20px] space-mono-bold">Portfolio</h1>
         <hr class="mt-4" />
-        <div class="web flex">
-          <div onclick="window.location.href='https://meowketplace2.vercel.app/index.html'" class="projek1 cursor-pointer ring-2 object-cover ring-black group w-[250px] h-[250px] bg-black ease-in-out duration-300 mt-10">
+        <div class="web flex gap-8">
+          <div onclick="window.location.href='https://meowketplace2.vercel.app/index.html'" class="projek1 cursor-pointer ring-2 object-cover ring-black group w-[300px] h-[250px] bg-black ease-in-out duration-300 mt-10">
             <div class="grup1 relative rounded-md">
               <h1
-                class="text-3xl font-space-mono-bold absolute bottom-0 left-4 opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-8 group-hover:left-4 ease-in-out duration-300">
-                Meowketplace</h1>
+                class="text-3xl font-space-mono-bold absolute bottom-0 left-4 opacity-0 space-mono-bold text-white group-hover:opacity-100 hover:text-black group-hover:bottom-4 group-hover:left-4 ease-in-out duration-300">
+                Meowketplace<br><span class="text-xl space-mono-regular">Website for Cat</span></h1>
               <img src="src/img/meowketplaceweb.jpg" alt="meowketplace"
-                class="group-hover:opacity-50 ease-in-out duration-300 w-[250px] h-[250px] object-cover" />
+                class="group-hover:opacity-50 ease-in-out duration-300 w-[300px] h-[250px] object-cover" />
+            </div>
+       
+          </div>
+             <div onclick="window.location.href='https://www.figma.com/proto/ceV7I8rJQj0fEIvCYjoREE/sports-car?node-id=1-2&p=f&t=lppmUXOMuTBVDxdL-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1'" class="projek1 cursor-pointer ring-2 object-cover ring-black group w-[300px] h-[250px] bg-black ease-in-out duration-300 mt-10">
+            <div class="grup1 relative rounded-md">
+              <h1
+                class="text-3xl font-space-mono-bold absolute bottom-0 left-4 opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 group-hover:left-4 ease-in-out duration-300 leading-tight">
+                Sgarage<br><span class="text-xl space-mono-regular">Figma Design</span></h1>
+              <img src="src/img/produkmobilmockup.jpg" alt="meowketplace"
+                class="group-hover:opacity-50 ease-in-out duration-300 w-[300px] h-[250px] object-cover" />
+            </div>
+       
+          </div>
+            <div onclick="window.location.href='https://www.figma.com/proto/ceV7I8rJQj0fEIvCYjoREE/sports-car?node-id=1-2&p=f&t=lppmUXOMuTBVDxdL-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1'" class="projek1 cursor-pointer ring-2 object-cover ring-black group w-[300px] h-[250px] bg-black ease-in-out duration-300 mt-10">
+            <div class="grup1 relative rounded-md">
+              <h1
+                class="text-3xl font-space-mono-bold absolute bottom-0 left-4 opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 group-hover:left-4 ease-in-out duration-300 leading-tight">
+                Sgarage<br><span class="text-xl space-mono-regular">Figma Design</span></h1>
+              <img src="src/img/produkmobilmockup.jpg" alt="meowketplace"
+                class="group-hover:opacity-50 ease-in-out duration-300 w-[300px] h-[250px] object-cover" />
             </div>
        
           </div>
@@ -513,5 +534,6 @@
     }
   </script>
 </body>
+
 
 </html>
