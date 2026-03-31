@@ -47,3 +47,27 @@ tambahkan offset agar judul section tidak tertutup navbar */
 section, main {
     scroll-margin-top: 80px; 
 }
+
+.tab-content {
+    display: none; /* Sembunyikan semua secara default */
+    opacity: 0;
+    transform: translateY(20px); /* Posisi awal sedikit di bawah */
+    transition: all 0.5s ease-out; /* Durasi animasi 0.5 detik */
+  }
+  /* Efek Hover HANYA untuk tombol yang TIDAK aktif */
+  .tab-btn:not(.active-tab):hover {
+    background-color: #000;
+    color: #fff;
+    transform: translateY(-2px); /* Contoh tambahan efek gerak saat hover */
+  }
+  /* Class ini akan dipicu oleh JavaScript */
+  .tab-content.active-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0); /* Kembali ke posisi asli */
+  }
+  
+  .active-tab {
+    background-color: #000;
+    color: #fff;
+  }

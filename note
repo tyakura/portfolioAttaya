@@ -1,0 +1,329 @@
+<div class="w-[95%] overflow-hidden relative">
+  <section class="flex w-full h-screen transition-all duration-700 ease-in-out" id="slider">
+    <main id="hero"
+      class="bg-[url(/src/img/Igtaya.png)] bg-cover bg-opacity-50 flex-1 ring-1 ring-black transition-all duration-700 ease-in-out w-full h-screen p-8 pl-16 opacity-100 overflow-hidden relative">
+      <div class="absolute inset-0 bg-gradient-r from-black/60 to-transparent"></div>
+      <div class="teks flex flex-col items-start justify-end h-full relative z-10">
+        <h1
+          class="text-[96px] font-semibold text-gray-50 mb-4 font-montserrat leading-[1.1] tracking-tight transform transition-transform duration-700 translate-y-0 hero-text">
+          I'M ATTAYA <br />ARKARNA
+        </h1>
+        <h2
+          class="text-gray-50 text-[30px] font-semibold space-mono-regular leading-10 transform transition-transform duration-700 translate-y-0 hero-text delay-100">
+          I'm a student
+          <span class="write bg-[#FFF1E6] text-black py-1"></span>
+          <br />From Madinatul Qur'an
+        </h2>
+        <button
+          class="button bg-[#FFF1E6] my-4 w-fit px-6 py-3 mt-4 text-xl text-black rounded-lg space-mono-bold hero-text hover:bg-black hover:text-white transition-all duration-300 ease-in-out">
+          Download CV
+        </button>
+      </div>
+    </main>
+
+    <div onclick="openSection(this)"
+      class="section flex w-[70px] ring-1 ring-offset-black flex-none bg-[#FFF1E6] h-screen shrink-0 cursor-pointer transition-all duration-700 ease-in-out relative overflow-hidden group hover:brightness-110">
+      <header
+        class="section-header absolute left-0 top-0 h-screen w-full flex flex-col items-center justify-between pt-8 pb-12 ring-1 ring-offset-black/20 space-mono-regular transition-opacity duration-500 z-20">
+        <h2 class="text-black/75 text-xl font-bold">O1</h2>
+        <h1 class="text-black/75 -rotate-90 text-3xl tracking-widest whitespace-nowrap">
+          About
+        </h1>
+      </header>
+      <main id="about-scroll-wrapper"
+        class="main-section absolute inset-0 w-full h-screen bg-[#FFF1E6] flex flex-col items-center justify-center ease-in-out opacity-0 scale-95 pointer-events-none transition-all duration-700 z-10">
+        <div class="max-w-4xl flex flex-col items-center">
+          <div id="content-about" class="main w-full transition-all duration-500 ease-in-out opacity-100">
+            <h1
+              class="text-[30px] text-black space-mono-bold transform -translate-y-10 transition-transform duration-700 title-anim font-space-mono font my-4">
+              ABOUT ME
+            </h1>
+            <hr />
+            <div class="flex mt-8 gap-8">
+              <div class="swiper w-[700px]">
+                <div
+                  class="img swiper-wrapper w-[350px!important] h-[350px!important] flex ring-1 bg-black ring-offset-black overflow-hidden">
+                  <img src="/src/img/igtaya2.jpeg" alt="attaya" class="swiper-slide object-cover opacity-50" />
+                </div>
+              </div>
+              <div class="teks flex flex-col w-full">
+                <h1 class="text-3xl font-montserrat font-semibold space-mono-bold">
+                  Attaya Arkarna
+                </h1>
+                <hr class="w-[10%] my-1" />
+                <h2 class="text-lg text-black/50 space-mono-medium">
+                  Student Software Engineer
+                </h2>
+                <hr class="mt-8 mb-2" />
+                <p class="text-black text-lg leading-relaxed opacity-90 text-justify">
+                  I am a web development student focused on building modern,
+                  responsive, and user-centered websites. I continuously sharpen
+                  my Front-End and Back-End skills to deliver impactful and
+                  high-quality digital experiences.
+                </p>
+
+                <div class="learn mt-8 w-[50%] flex">
+                  <i class="fa-solid fa-code"></i>
+                  <i class="fa-brands fa-css"></i>
+                  <i class="fa-brands fa-js"></i>
+                  <span><i class="fa-brands fa-tailwind-css"></i></span>
+                  <i class="fa-brands fa-typescript"></i>
+                  <i class="fa-brands fa-react"></i>
+                  <i class="devicon-css3-plain"></i>
+                  <i class="devicon-tailwindcss-plain"></i>
+                  <i class="devicon-typescript-plain"></i>
+                </div>
+                <hr class="mt-16 mb-4" />
+                <div id="content-about" class="w-full transition-all duration-500 transform translate-y-0 opacity-100">
+                  <button onclick="switchContent('skill')"
+                    class="space-mono-regular text-xl hover:translate-y-2 space-mono-bold duration-300 w-fit group flex flex-col absolute -bottom-35 right-10 items-center">
+                    See More
+                    <span class="transition-all duration-300"><i class="fa-solid fa-chevron-down"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="max-w-4xl flex flex-col items-center">
+          <div id="content-skill" class="main">
+            <h1
+              class="text-[30px] text-black space-mono-bold transform transition-transform duration-700 title-anim font-space-mono font my-2">
+              MY SKILL
+            </h1>
+            <hr />
+            <div class="profil flex">
+              <div class="btn-profil flex flex-col gap-1">
+                <button
+                  class="button skill flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:text-[#FFF1E6] hover:bg-[url(src/img/igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-1 ring-black mt-4 mr-4 ease-in-out duration-1000">
+                  Skill
+                </button>
+                <button
+                  class="button edukasi flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:text-[#FFF1E6] hover:bg-[url(src/img/igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-1 ring-black mt-4 mr-4 ease-in-out duration-1000">
+                  Edukasi
+                </button>
+                <button
+                  class="button pengalaman flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:text-[#FFF1E6] hover:bg-[url(src/img/igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-1 ring-black mt-4 mr-4 ease-in-out duration-1000">
+                  Pengalaman
+                </button>
+              </div>
+              <div class="isi">
+                <div class="skill flex mt-8 flex-col">
+                  <h1 class="flex items-center">
+                    HTML <span class="ml-auto">90%</span>
+                  </h1>
+                  <div class="line w-[500px] flex items-center justify-start relative mt-2 mb-8">
+                    <span class="w-full h-[4px] bg-black absolute"></span>
+                    <span class="h-2 w-[90%] bg-red-500 z-1"></span>
+                  </div>
+                  <h1 class="flex items-center">
+                    CSS <span class="ml-auto">50%</span>
+                  </h1>
+                  <div class="line w-[500px] flex items-center justify-start relative mt-2 mb-8">
+                    <span class="w-full h-[4px] bg-black absolute"></span>
+                    <span class="h-2 w-[50%] bg-red-500 z-1"></span>
+                  </div>
+                  <h1 class="flex items-center">
+                    JAVASCRIPT <span class="ml-auto">50%</span>
+                  </h1>
+                  <div class="line w-[500px] flex items-center justify-start relative mt-2 mb-8">
+                    <span class="w-full h-[4px] bg-black absolute"></span>
+                    <span class="h-2 w-[50%] bg-red-500 z-1"></span>
+                  </div>
+                  <h1 class="flex items-center">
+                    PHP <span class="ml-auto">70%</span>
+                  </h1>
+                  <div class="line w-[500px] flex items-center justify-start relative mt-2 mb-8">
+                    <span class="w-full h-[4px] bg-black absolute"></span>
+                    <span class="h-2 w-[70%] bg-red-500 z-1"></span>
+                  </div>
+                </div>
+                <div class="edukasi"></div>
+                <div class="pengalaman"></div>
+                <hr class="w-full mt-8 mb-4" />
+                <div id="content-about" class="w-full transition-all duration-500 transform translate-y-0 opacity-100">
+                  <button onclick="switchContent('about')"
+                    class="space-mono-regular text-xl hover:-translate-y-2 space-mono-bold duration-300 w-fit group flex flex-col absolute -bottom-22 right-2 items-center gap-2">
+                    Back to About
+                    <span class="transition-all duration-300"><i class="fa-solid fa-chevron-up"></i></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div onclick="openSection(this)"
+      class="section flex w-[70px] ring-1 ring-offset-black flex-none bg-[#FFF1E6] h-screen shrink-0 cursor-pointer transition-all duration-700 ease-in-out relative overflow-hidden group hover:brightness-110">
+      <header
+        class="section-header absolute left-0 top-0 h-screen w-full flex flex-col items-center justify-between pt-8 pb-24 ring-1 ring-offset-black/20 space-mono-regular transition-opacity duration-500 z-20">
+        <h2 class="text-black/75 text-xl font-bold">O2</h2>
+        <h1 class="text-black/75 -rotate-90 text-3xl tracking-widest whitespace-nowrap">
+          Portfolio
+        </h1>
+      </header>
+      <main
+        class="main-section absolute inset-0 w-full h-screen bg-[#FFF1E6] flex flex-col items-center justify-center opacity-0 scale-95 pointer-events-none transition-all duration-700 ease-out z-10">
+        <h1
+          class="text-[80px] text-white font-montserrat font-bold transform -translate-y-10 transition-transform duration-700 title-anim">
+          My Work
+        </h1>
+      </main>
+    </div>
+
+    <div onclick="openSection(this)"
+      class="section flex w-[70px] ring-1 ring-offset-black flex-none bg-[#FFF1E6] h-screen shrink-0 cursor-pointer transition-all duration-700 ease-in-out relative overflow-hidden group hover:brightness-110">
+      <header
+        class="section-header absolute left-0 top-0 h-screen w-full flex flex-col items-center justify-between pt-8 pb-32 ring-1 ring-offset-black/20 space-mono-regular transition-opacity duration-500 z-20">
+        <h2 class="text-black/75 text-xl font-bold">O3</h2>
+        <h1 class="text-black/75 -rotate-90 text-3xl tracking-widest whitespace-nowrap">
+          Certificates
+        </h1>
+      </header>
+      <main
+        class="main-section absolute inset-0 w-full h-screen bg-[#FFF1E6] flex flex-col items-center justify-center opacity-0 scale-95 pointer-events-none transition-all duration-700 ease-out z-10">
+        <h1
+          class="text-[80px] text-white font-montserrat font-bold transform -translate-y-10 transition-transform duration-700 title-anim">
+          Achievements
+        </h1>
+      </main>
+    </div>
+
+    <div onclick="openSection(this)"
+      class="section flex w-[70px] ring-1 ring-offset-black flex-none bg-[#FFF1E6] h-screen shrink-0 cursor-pointer transition-all duration-700 ease-in-out relative overflow-hidden group hover:brightness-110">
+      <header
+        class="section-header absolute left-0 top-0 h-screen w-full flex flex-col items-center justify-between pt-8 pb-18 ring-1 ring-offset-black/20 space-mono-regular transition-opacity duration-500 z-20">
+        <h2 class="text-black/75 text-xl font-bold">O4</h2>
+        <h1 class="text-black/75 -rotate-90 text-3xl tracking-widest whitespace-nowrap">
+          Contact
+        </h1>
+      </header>
+      <main
+        class="main-section absolute inset-0 w-full h-screen bg-[#FFF1E6] flex flex-col items-center justify-center opacity-0 scale-95 pointer-events-none transition-all duration-700 ease-out z-10">
+        <h1
+          class="text-[80px] text-white font-montserrat font-bold transform -translate-y-10 transition-transform duration-700 title-anim">
+          Get in Touch
+        </h1>
+      </main>
+    </div>
+  </section>
+</div>
+
+<div class="max-w-5xl mx-auto gap-6 w-full mt-16">
+  <h1 class="md:text-[40px] text-[20px] font-bold mb-4 font-space-mono text-black space-mono-bold">
+    ABOUT ME
+  </h1>
+  <hr class="border-black mb-10" />
+  <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
+    <div class="w-[250px] h-[300px] shrink-0 bg-black overflow-hidden ring-1 ring-black ring-offset-4">
+      <img src="/src/img/igtaya2.jpeg" alt="attaya" class="w-full h-full object-cover opacity-80" />
+    </div>
+    <div class="flex-1">
+      <h1 class="text-3xl font-bold mb- font-space-mono space-mono-bold">
+        Attaya Arkarna
+      </h1>
+      <hr class="w-[5%] ring-1 my-1" />
+      <h2 class="text-lg text-black/60 mb-6 font-space-mono space-mono-bold">
+        Student Software Engineer
+      </h2>
+      <hr class="mt-8 mb-2" />
+      <p class="text-lg leading-relaxed text-justify text-black/80 font-space-mono space-mono-regular">
+        I am a web development student focused on building modern, responsive,
+        and user-centered websites. I continuously sharpen my Front-End and
+        Back-End skills to deliver impactful and high-quality digital
+        experiences.
+      </p>
+      <div class="flex gap-4 mt-8 text-2xl font-space-mono space-mono-regular flex-wrap">
+        <p
+          class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
+          html
+        </p>
+        <p
+          class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
+          css
+        </p>
+        <p
+          class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
+          javascript
+        </p>
+        <p
+          class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
+          php
+        </p>
+        <p
+          class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
+          react
+        </p>
+        <p
+          class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
+          tailwindcss
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- skil -->
+<div class="max-w-4xl flex flex-col items-center">
+  <div id="content-skill" class="main">
+    <h1
+      class="text-[30px] text-black space-mono-bold transform transition-transform duration-700 title-anim font-space-mono font my-2">
+      MY SKILL
+    </h1>
+    <hr />
+    <div class="profil flex">
+      <div class="btn-profil flex flex-col gap-1">
+        <button
+          class="button skill flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:text-[#FFF1E6] hover:bg-[url(src/img/igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-1 ring-black mt-4 mr-4 ease-in-out duration-1000">
+          Skill
+        </button>
+        <button
+          class="button edukasi flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:text-[#FFF1E6] hover:bg-[url(src/img/igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-1 ring-black mt-4 mr-4 ease-in-out duration-1000">
+          Edukasi
+        </button>
+        <button
+          class="button pengalaman flex items-end space-mono-bold w-60 h-26 text-black text-start text-2xl bg-dark bg-opacity-50 hover:text-[#FFF1E6] hover:bg-[url(src/img/igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-1 ring-black mt-4 mr-4 ease-in-out duration-1000">
+          Pengalaman
+        </button>
+      </div>
+      <div class="isi">
+        <div class="skill flex mt-8 flex-col">
+          <h1 class="flex items-center">
+            HTML <span class="ml-auto">90%</span>
+          </h1>
+          <div class="line w-[500px] flex items-center justify-start relative mt-2 mb-8">
+            <span class="w-full h-[4px] bg-black absolute"></span>
+            <span class="h-2 w-[90%] bg-red-500 z-1"></span>
+          </div>
+          <h1 class="flex items-center">
+            CSS <span class="ml-auto">50%</span>
+          </h1>
+          <div class="line w-[500px] flex items-center justify-start relative mt-2 mb-8">
+            <span class="w-full h-[4px] bg-black absolute"></span>
+            <span class="h-2 w-[50%] bg-red-500 z-1"></span>
+          </div>
+          <h1 class="flex items-center">
+            JAVASCRIPT <span class="ml-auto">50%</span>
+          </h1>
+          <div class="line w-[500px] flex items-center justify-start relative mt-2 mb-8">
+            <span class="w-full h-[4px] bg-black absolute"></span>
+            <span class="h-2 w-[50%] bg-red-500 z-1"></span>
+          </div>
+          <h1 class="flex items-center">
+            PHP <span class="ml-auto">70%</span>
+          </h1>
+          <div class="line w-[500px] flex items-center justify-start relative mt-2 mb-8">
+            <span class="w-full h-[4px] bg-black absolute"></span>
+            <span class="h-2 w-[70%] bg-red-500 z-1"></span>
+          </div>
+        </div>
+        <div class="edukasi"></div>
+        <div class="pengalaman"></div>
+        <hr class="w-full mt-8 mb-4" />
+      </div>
+    </div>
+  </div>
+</div>

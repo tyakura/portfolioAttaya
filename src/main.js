@@ -80,3 +80,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+  function showTab(tabId) {
+    // 1. Sembunyikan semua konten tab
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => {
+      content.classList.add('hidden');
+    });
+
+    // 2. Hapus status 'active-tab' dari semua tombol
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('active-tab');
+    });
+
+    // 3. Tampilkan konten yang dipilih
+    const activeContent = document.getElementById(tabId);
+    if (activeContent) {
+      activeContent.classList.remove('hidden');
+    }
+
+    // 4. Tambahkan status active ke tombol yang diklik
+    // Kita cari tombol mana yang memanggil fungsi ini
+    event.currentTarget.classList.add('active-tab');
+  }
