@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/assets/img/logoat.png" />
+  <link rel="icon" type="image/svg+xml" href="/assets/img/tayajpn2.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>portfolio-attaya2</title>
   <link rel="stylesheet" href="src/style.css" />
@@ -19,7 +19,7 @@
   <div id="sidebar-menu"
     class="fixed top-0 -left-full md:w-[40%] w-[70%] h-screen bg-[#FFF1E6] z-70 transition-all duration-500 ease-in-out lg:hidden flex flex-col p-8 ring-1 ring-black">
     <div class="flex justify-between items-center mb-10">
-      <span class="kaushan-script-regular text-2xl">AA</span>
+      <span class="kaushan-script-regular text-2xl"><img src="assets/img/tayajpn.png" alt="taya"></span>
       <button id="close-menu" class="text-2xl"><i class="fas fa-times"></i></button>
     </div>
 
@@ -44,10 +44,17 @@
       </button>
     </div>
     <nav class="flex flex-col justify-between items-center lg:mt-5 mt-2 w-full h-full">
-      <div onclick="resetLayout()" title="Kembali ke Beranda"
-        class="kaushan-script-regular md:text-[28px] text-[20px] hover:text-black/75 cursor-pointer transition-all duration-300 ease-in-out hover:translate-x-1 hover:scale-105 hover:-skew-x-10">
-        AA
-      </div>
+ <div onclick="resetLayout()" title="Kembali ke Beranda"
+  class="relative group md:w-24 w-16 h-10 flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out hover:scale-105">
+  
+  <img src="assets/img/tayajpn3.png" alt="logo" id="logo-img"
+    class="md:w-16 w-10 transition-all duration-500 opacity-100 lg:group-hover:opacity-0">
+
+  <a href="#" id="taya-text"
+    class="absolute inset-0 flex items-center justify-center kaushan-script-regular md:text-[28px] text-[20px] text-black transition-all duration-500 opacity-0 lg:group-hover:opacity-100 pointer-events-none lg:group-hover:pointer-events-auto">
+    Taya
+  </a>
+</div>
 
       <div class="sosmed flex flex-col items-center justify-center md:w-12 w-8 -mb-4">
         <div
@@ -233,7 +240,7 @@
                       Islamic School</h4>
 
                   </div>
-                  <div class="time absolute md:right-6 right-0 bottom-0">
+                  <div class="time absolute md:right-6 right-0 md:top-2.5 top-0">
                     <p
                       class="md:text-[20px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
                       2015 - 2021</p>
@@ -250,14 +257,14 @@
                       Islamic School</h4>
 
                   </div>
-                  <div class="time absolute md:right-6 right-0 bottom-0">
+                  <div class="time absolute md:right-6 right-0 md:top-2.5 top-0">
                     <p
-                      class="md:text-[20px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
+                      class="md:text-[24px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
                       2022 - 2025</p>
                   </div>
                 </li>
                 <li
-                  class="pl-4 h-20 group flex items-center relative gap-4 ring-2 hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out ">
+                  class="pl-4 lg:h-full h-20 group flex items-center relative gap-4 ring-2 hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out ">
                   <img src="/assets/img/logomq.jpeg" alt="mq"
                     onclick="window.location.href='https://ppdb.smkmadinatulquran.sch.id/'"
                     class="w-10 h-10 bg-white rounded-full my-2 hover:my-4 hover:shadow-lg hover:shadow-black hover:-rotate-10 cursor-pointer transition-all duration-300 ease-in-out">
@@ -270,9 +277,9 @@
                       class="md:text-[14px] text-[10px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
                       Software Engineering Student</p>
                   </div>
-                  <div class="time absolute md:right-6 right-2 bottom-0">
+                  <div class="time absolute md:right-6 right-2 md:top-2.5 top-0">
                     <p
-                      class="md:text-[20px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
+                      class="md:text-[24px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
                       2026 - 2028</p>
                   </div>
                 </li>
@@ -284,22 +291,22 @@
               <hr class="border-black mt-4 mb-6">
               <ul class="space-y-4 space-mono-regular">
                 <li
-                  class="ring-1 ring-black p-4 flex items-center gap-4 group relative hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out flex-col">
+                  class="ring-1 ring-black p-4 relative flex items-center gap-4 group hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out flex-col">
                   <div class="tex atas w-full flex gap-4 items-center">
                     <i
-                      class="fa-brands fa-uikit text-[30px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-2 hover:py-2 hover:shadow-lg hover:shadow-black"></i>
+                      class="fa-brands fa-uikit lg:text-[30px] text-[20px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-2 hover:py-2 hover:shadow-lg hover:shadow-black"></i>
                     <div class="tex">
-                      <h4 class="font-bold text-[18px] group-hover:text-white transition-all duration-300 ease-in-out">
+                      <h4 class="font-bold lg:text-[18px] text-[14px] group-hover:text-white transition-all duration-300 ease-in-out">
                         UI Design</h4>
-                      <p class="text-sm text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
+                      <p class="lg:text-[16px] text-[12px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
                         High school student</p>
                     </div>
                     <p
-                      class="text-2xl text-gray-400 ml-40 font-bold hover:text-transparent hover:bg-clip-text absolute top-6 right-6 hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
+                      class="lg:text-2xl text-[14px] text-gray-400 ml-40 font-bold hover:text-transparent hover:bg-clip-text absolute top-2 right-2 hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
                       2026 - 2028</p>
                   </div>
 
-                  <div class="tex bawah mt-2">
+                  <div class="tex bawah mt-2 lg:text-[16px] text-[14px] ">
                     <p>Between 2025 and 2026, I crafted intuitive UI/UX designs and transformed them into responsive,
                       high-performance websites using modern web development technologies.</p>
                   </div>
@@ -308,19 +315,19 @@
                   class="ring-1 ring-black p-4 flex items-center gap-4 group relative hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out flex-col">
                   <div class="tex atas w-full flex gap-4 items-center">
                     <i
-                      class="fa-brands fa-html5 text-[30px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-3 hover:py-2 hover:shadow-lg hover:shadow-black"></i>
+                      class="fa-brands fa-html5 lg:text-[30px] md:text-[25px] sm:text-[20px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-3 hover:py-2 hover:shadow-lg hover:shadow-black"></i>
                     <div class="tex">
-                      <h4 class="font-bold text-[18px] group-hover:text-white transition-all duration-300 ease-in-out">
+                      <h4 class="font-bold lg:text-[18px] md:text-[16px] sm:text-[14px] group-hover:text-white transition-all duration-300 ease-in-out">
                         Web Developing</h4>
-                      <p class="text-sm text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
+                      <p class="lg:text-[16px] md:text-[14px] sm:text-[12px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
                         High
                         school student</p>
                     </div>
                     <p
-                      class="text-2xl text-gray-400 ml-40 font-bold hover:text-transparent hover:bg-clip-text absolute top-6 right-6 hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
+                      class="lg:text-2xl text-[14px] text-gray-400 ml-40 font-bold hover:text-transparent hover:bg-clip-text absolute top-2 right-2 hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
                       2026 - 2028</p>
                   </div>
-                  <div class="tex bawah mt-2">
+                  <div class="tex bawah mt-2 lg:text-[16px] text-[14px] ">
                     <p class="text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">From 2025 to
                       2026, I delivered user-centric digital experiences by combining creative interface design with
                       robust, efficient, and scalable front-end development.</p>
@@ -571,8 +578,7 @@
       const firstBtn = document.querySelector('.tab-btn');
       if (firstBtn) firstBtn.click();
     });
-  </script>
-  <script>
+    
     var typed = new Typed(".write", {
       strings: [
         "Web Developer",
@@ -867,6 +873,27 @@
   
   window.open(url, '_blank');
 }
+
+const logoImg = document.getElementById('logo-img');
+const tayaText = document.getElementById('taya-text');
+
+function autoSwapLogo() {
+  // Hanya berjalan di layar di bawah 1024px (Tablet/HP)
+  if (window.innerWidth < 1024) {
+    // Tampilkan Teks, Hilangkan Gambar
+    logoImg.classList.replace('opacity-100', 'opacity-0');
+    tayaText.classList.replace('opacity-0', 'opacity-100');
+
+    // Kembalikan ke normal setelah 3 detik
+    setTimeout(() => {
+      logoImg.classList.replace('opacity-0', 'opacity-100');
+      tayaText.classList.replace('opacity-100', 'opacity-0');
+    }, 10000);
+  }
+}
+
+// Jalankan setiap 10 detik
+setInterval(autoSwapLogo, 10000);
   </script>
 </body>
 
