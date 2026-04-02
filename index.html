@@ -19,11 +19,11 @@
   <div id="sidebar-menu"
     class="fixed top-0 -left-full md:w-[40%] w-[70%] h-screen bg-[#FFF1E6] z-70 transition-all duration-500 ease-in-out lg:hidden flex flex-col p-8 ring-1 ring-black">
     <div class="flex justify-between items-center mb-10">
-      <span class="kaushan-script-regular text-2xl"><img src="assets/img/tayajpn.png" alt="taya"></span>
+      <span class="kaushan-script-regular text-3xl">Attaya</span>
       <button id="close-menu" class="text-2xl"><i class="fas fa-times"></i></button>
     </div>
 
-    <nav class="flex flex-col gap-6 text-xl font-bold space-mono-bold">
+    <nav class="flex flex-col gap-6 text-[18px] font-bold space-mono-bold">
       <a href="#about" class="mobile-link border-b border-black/10 pb-2">ABOUT</a>
       <a href="#skill" class="mobile-link border-b border-black/10 pb-2">SKILLS</a> <a href="#portfolio"
         class="mobile-link border-b border-black/10 pb-2">PORTFOLIO</a>
@@ -33,6 +33,8 @@
     <div class="mt-auto flex gap-4 text-2xl">
       <a href="https://github.com/tyakura"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.instagram.com/taya_asakura/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/attaya-arkarna-9b0a3b2b1/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100093831633257&locale=id_ID"><i class="fa-brands fa-facebook"></i></a>
     </div>
   </div>
   <header
@@ -44,17 +46,17 @@
       </button>
     </div>
     <nav class="flex flex-col justify-between items-center lg:mt-5 mt-2 w-full h-full">
- <div onclick="resetLayout()" title="Kembali ke Beranda"
-  class="relative group md:w-24 w-16 h-10 flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out hover:scale-105">
-  
-  <img src="assets/img/tayajpn3.png" alt="logo" id="logo-img"
-    class="md:w-16 w-10 transition-all duration-500 opacity-100 lg:group-hover:opacity-0">
+      <div onclick="resetLayout()" title="Kembali ke Beranda"
+        class="relative group md:w-24 w-16 h-10 flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out hover:scale-105">
 
-  <a href="#" id="taya-text"
-    class="absolute inset-0 flex items-center justify-center kaushan-script-regular md:text-[28px] text-[20px] text-black transition-all duration-500 opacity-0 lg:group-hover:opacity-100 pointer-events-none lg:group-hover:pointer-events-auto">
-    Taya
-  </a>
-</div>
+        <img src="assets/img/tayajpn3.png" alt="logo" id="logo-img"
+          class="md:w-16 w-12 transition-all duration-500 opacity-100 lg:group-hover:opacity-0">
+
+        <a href="#" id="taya-text"
+          class="absolute inset-0 flex items-center justify-center kaushan-script-regular md:text-[28px] text-[20px] text-black transition-all duration-500 opacity-0 lg:group-hover:opacity-100 pointer-events-none lg:group-hover:pointer-events-auto">
+          Taya
+        </a>
+      </div>
 
       <div class="sosmed flex flex-col items-center justify-center md:w-12 w-8 -mb-4">
         <div
@@ -91,15 +93,15 @@
         <h1 class="md:text-[96px] text-[40px] font-semibold leading-[1.1] tracking-tight font-montserrat">
           I'M ATTAYA <br />ARKARNA
         </h1>
-        <h2 class="md:text-[30px] text-[20px] font-semibold mt-4 space-mono-regular leading-tight">
+        <h2 class="md:text-[30px] text-[20px] font-semibold mt-4 mb-4 space-mono-regular leading-tight">
           Experienced
           <span class="write bg-[#FFF1E6] text-black"></span> <br />From
           Madinatul Qur'an
         </h2>
-        <button onclick="scrollTo()  "
-          class="bg-[#FFF1E6] text-black md:px-6 md:py-3 py-2 px-4 mt-4 md:text-[18px] text-[14px] rounded-lg font-bold hover:bg-black hover:text-white transition-all">
+        <a href="#about"
+          class="bg-[#FFF1E6] text-black md:px-6 md:py-3 py-2 px-4 mt-8 md:text-[18px] text-[14px] rounded-lg font-bold hover:bg-black hover:text-white transition-all">
           About me
-        </button>
+        </a>
       </div>
     </section>
 
@@ -108,7 +110,7 @@
         <h1 class="md:text-[40px] text-[30px] font-bold md:mb-4 mb-2 font-space-mono text-black space-mono-bold">
           ABOUT ME
         </h1>
-        <hr class="w-full mt-4 mb-12" />
+        <hr class="w-full mt-4 mb-8" />
         <div class="flex flex-col lg:flex-row gap-16 items-center lg:items-start">
           <div
             class="lg:w-[250px] lg:h-[300px] shrink-0 mx-auto bg-top bg-cover bg-black overflow-hidden ring-1 ring-black ring-offset-4">
@@ -173,19 +175,19 @@
 
       <!-- skill html -->
       <div id="skill" class="max-w-5xl mx-auto w-full mt-20">
-        <div class="lg:flex md:flex-row gap-4 flex-col lg:justify-start justify-center items-center">
+        <div class="lg:flex md:flex-row lg:gap-4 gap-1 flex-col lg:justify-start justify-center items-center">
 
-          <div class="flex flex-col lg:justify-start justify-center items-center gap-2 mb:w-full lg:mb-4">
+          <div class="flex flex-col lg:justify-start justify-center items-center lg:gap-2 gap-0.5 mb:w-full lg:mb-4">
             <button onclick="showTab('tab-skill')"
-              class="tab-btn active-tab flex items-end space-mono-bold lg:w-60 w-[80%] lg:h-26 h-20 text-black text-start text-2xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img/Igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black mr-4 md:pl-2 md:pb-0.5 pl-4 pb-2 ease-in-out duration-1000 hover:text-white">
+              class="tab-btn active-tab flex items-end space-mono-bold lg:w-60 w-full lg:h-26 h-16 text-black text-start lg:text-2xl text-xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img/Igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black mr-4 md:pl-2 md:pb-0.5 pl-4 pb-2 ease-in-out duration-1000 hover:text-white">
               SKILL
             </button>
             <button onclick="showTab('tab-edukasi')"
-              class="tab-btn flex items-end space-mono-bold lg:w-60 w-[80%] lg:h-26 h-20 text-black text-start text-2xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img/Igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black mt-2 mr-4 ease-in-out duration-1000 hover:text-white">
+              class="tab-btn flex items-end space-mono-bold lg:w-60 w-full lg:h-26 h-16 text-black text-start lg:text-2xl text-xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img/Igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black lg:mt-2 mt-0.5 mr-4 ease-in-out duration-1000 hover:text-white">
               EDUCATION
             </button>
             <button onclick="showTab('tab-pengalaman')"
-              class="tab-btn flex items-end space-mono-bold lg:w-60 w-[80%] lg:h-26 h-20 text-black text-start text-2xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img/Igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black mt-2    mr-4 ease-in-out duration-1000 hover:text-white">
+              class="tab-btn flex items-end space-mono-bold lg:w-60 w-full lg:h-26 h-16 text-black text-start lg:text-2xl text-xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img/Igtaya.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black lg:mt-2 mt-0.5 mr-4 ease-in-out duration-1000 hover:text-white">
               EXPERIENCE
             </button>
           </div>
@@ -240,9 +242,9 @@
                       Islamic School</h4>
 
                   </div>
-                  <div class="time absolute md:right-6 right-0 md:top-2.5 top-0">
+                  <div class="time absolute md:right-6 right-0 md:top-2.5 bottom-0">
                     <p
-                      class="md:text-[20px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
+                      class="md:text-[24px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
                       2015 - 2021</p>
                   </div>
                 </li>
@@ -257,7 +259,7 @@
                       Islamic School</h4>
 
                   </div>
-                  <div class="time absolute md:right-6 right-0 md:top-2.5 top-0">
+                  <div class="time absolute md:right-6 right-0 md:top-2.5 bottom-0">
                     <p
                       class="md:text-[24px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
                       2022 - 2025</p>
@@ -277,7 +279,7 @@
                       class="md:text-[14px] text-[10px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
                       Software Engineering Student</p>
                   </div>
-                  <div class="time absolute md:right-6 right-2 md:top-2.5 top-0">
+                  <div class="time absolute md:right-6 right-2 lg:top-2.5 md:top-5 sm:bottom-0 bottom-0">
                     <p
                       class="md:text-[24px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
                       2026 - 2028</p>
@@ -294,11 +296,13 @@
                   class="ring-1 ring-black p-4 relative flex items-center gap-4 group hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out flex-col">
                   <div class="tex atas w-full flex gap-4 items-center">
                     <i
-                      class="fa-brands fa-uikit lg:text-[30px] text-[20px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-2 hover:py-2 hover:shadow-lg hover:shadow-black"></i>
+                      class="fa-brands fa-uikit lg:text-[30px] text-[25px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-2 hover:py-2 hover:shadow-lg hover:shadow-black"></i>
                     <div class="tex">
-                      <h4 class="font-bold lg:text-[18px] text-[14px] group-hover:text-white transition-all duration-300 ease-in-out">
+                      <h4
+                        class="font-bold lg:text-[18px] text-[16px] group-hover:text-white transition-all duration-300 ease-in-out">
                         UI Design</h4>
-                      <p class="lg:text-[16px] text-[12px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
+                      <p
+                        class="lg:text-[16px] text-[14px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
                         High school student</p>
                     </div>
                     <p
@@ -315,11 +319,13 @@
                   class="ring-1 ring-black p-4 flex items-center gap-4 group relative hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out flex-col">
                   <div class="tex atas w-full flex gap-4 items-center">
                     <i
-                      class="fa-brands fa-html5 lg:text-[30px] md:text-[25px] sm:text-[20px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-3 hover:py-2 hover:shadow-lg hover:shadow-black"></i>
+                      class="fa-brands fa-html5 lg:text-[30px] text-[25px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-3 hover:py-2 hover:shadow-lg hover:shadow-black"></i>
                     <div class="tex">
-                      <h4 class="font-bold lg:text-[18px] md:text-[16px] sm:text-[14px] group-hover:text-white transition-all duration-300 ease-in-out">
+                      <h4
+                        class="font-bold lg:text-[18px] text-[16px] group-hover:text-white transition-all duration-300 ease-in-out">
                         Web Developing</h4>
-                      <p class="lg:text-[16px] md:text-[14px] sm:text-[12px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
+                      <p
+                        class="lg:text-[16px] text-[12px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
                         High
                         school student</p>
                     </div>
@@ -434,32 +440,32 @@
 
             <form action="#" class="flex flex-col gap-8">
               <div class="relative border-b border-black/30 focus-within:border-black transition-colors">
-                <input type="text"
+                <input type="text" id="name"
                   class="w-full bg-transparent py-2 outline-none border-b border-black/30 focus-within:border-black transition-colors"
                   placeholder="Name">
               </div>
 
               <div class="relative border-b border-black/30 focus-within:border-black transition-colors">
-                <input type="email"
+                <input type="email" id="email"
                   class="w-full bg-transparent py-2 outline-none border-b border-black/30 focus-within:border-black transition-colors"
                   placeholder="Email">
               </div>
 
               <div class="relative border-b border-black/30 focus-within:border-black transition-colors">
-                <input type="text"
+                <input type="text" id="subject"
                   class="w-full bg-transparent py-2 outline-none border-b border-black/30 focus-within:border-black transition-colors"
                   placeholder="Subject">
               </div>
 
               <div class="relative border-b border-black/30 focus-within:border-black transition-colors">
-                <textarea
+                <textarea id="message"
                   class="w-full bg-transparent h-28 outline-none border-b border-black/30 focus-within:border-black transition-colors"
                   placeholder="Message"></textarea>
               </div>
 
-              <button type="submit"
+              <button onclick="sendToWA()"
                 class="group bg-[#222] text-white w-fit px-8 py-3 rounded-full flex items-center gap-3 hover:bg-black transition-all mt-4">
-                <span class="text-xs font-bold tracking-widest uppercase">Send Mail</span>
+                <span class="text-xs font-bold tracking-widest uppercase">Send</span>
                 <i class="fa-regular fa-envelope text-sm group-hover:translate-x-1 transition-transform"></i>
               </button>
             </form>
@@ -475,37 +481,36 @@
             </p>
 
             <div class="flex flex-col gap-6 ">
-              <div class="flex items-center gap-6 group">
+              <div class="flex items-center md:gap-6 gap-4 group">
                 <div
-                  class="w-12 h-12 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
-                  <i class="fa-regular fa-envelope text-xl"></i>
+                  class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
+                  <i class="fa-regular fa-envelope md:text-xl text-lg"></i>
                 </div>
                 <span
                   class="font-bold text-[14px] md:text-[16px] tracking-widest uppercase break-all">attayaarkarna12@gmail.com</span>
               </div>
 
-              <div class="flex items-center gap-6 group">
-                <div
-                  class="w-12 h-12 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
-                  <i class="fa-solid fa-phone-flip text-xl"></i>
+              <div class="flex items-center md:gap-6 gap-4 group">
+                <div onclick="sendWA()"
+                  class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
+                  <i class="fa-solid fa-phone-flip md:text-xl text-lg"></i>
                 </div>
                 <span class="font-bold text-[14px] md:text-[16px] tracking-widest uppercase">+62 881 0244 90239</span>
               </div>
 
-              <div class="flex items-center gap-6 group">
+              <div class="flex items-center md:gap-6 gap-4 group">
                 <div
-                  class="w-12 h-12 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
-                  <i class="fa-solid fa-location-dot text-xl"></i>
+                  class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
+                  <i class="fa-solid fa-location-dot md:text-xl text-lg"></i>
                 </div>
-                <span class="font-bold text-[14px] md:text-[16px] tracking-widest uppercase italic">Madinatul Qur'an,
-                  Bogor,
-                  Indonesia</span>
+                <span class="font-bold text-[14px] md:text-[16px] tracking-widest uppercase italic">Cikarang Utara,
+                  Bekasi, Indonesia</span>
               </div>
 
-              <div class="flex items-center gap-6 group">
+              <div class="flex items-center md:gap-6 gap-4 group">
                 <div
-                  class="w-12 h-12 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
-                  <i class="fa-regular fa-clock text-xl"></i>
+                  class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
+                  <i class="fa-regular fa-clock md:text-xl text-lg"></i>
                 </div>
                 <span class="font-bold text-[14px] md:text-[16px] tracking-widest uppercase">Mon - Fri 9AM TO 5PM</span>
               </div>
@@ -542,6 +547,7 @@
 
   <!-- skill -->
   <script>
+    scrollBehavior = "smooth";
     function showTab(tabId) {
       // 1. Ambil semua konten dan tombol
       const contents = document.querySelectorAll('.tab-content');
@@ -578,7 +584,7 @@
       const firstBtn = document.querySelector('.tab-btn');
       if (firstBtn) firstBtn.click();
     });
-    
+
     var typed = new Typed(".write", {
       strings: [
         "Web Developer",
@@ -861,39 +867,69 @@
     }
 
     function sendWA() {
-  // Nomor HP yang sudah kamu berikan
-  const phoneNumber = "62881024490239"; 
-  
-  // Pesan otomatis yang akan muncul di kolom chat user
-  const message = "Halo Attaya"; 
-  
-  // Membuka link WhatsApp di tab baru
-  // encodeURIComponent digunakan agar spasi/karakter khusus dibaca benar oleh browser
-  const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-  
-  window.open(url, '_blank');
-}
+      // Nomor HP yang sudah kamu berikan
+      const phoneNumber = "62881024490239";
 
-const logoImg = document.getElementById('logo-img');
-const tayaText = document.getElementById('taya-text');
+      // Pesan otomatis yang akan muncul di kolom chat user
+      const message = "Halo Attaya";
 
-function autoSwapLogo() {
-  // Hanya berjalan di layar di bawah 1024px (Tablet/HP)
-  if (window.innerWidth < 1024) {
-    // Tampilkan Teks, Hilangkan Gambar
-    logoImg.classList.replace('opacity-100', 'opacity-0');
-    tayaText.classList.replace('opacity-0', 'opacity-100');
+      // Membuka link WhatsApp di tab baru
+      // encodeURIComponent digunakan agar spasi/karakter khusus dibaca benar oleh browser
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
-    // Kembalikan ke normal setelah 3 detik
-    setTimeout(() => {
-      logoImg.classList.replace('opacity-0', 'opacity-100');
-      tayaText.classList.replace('opacity-100', 'opacity-0');
-    }, 10000);
-  }
-}
+      window.open(url, '_blank');
+    }
 
-// Jalankan setiap 10 detik
-setInterval(autoSwapLogo, 10000);
+    function sendToWA() {
+      // Ambil value dari input
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+
+      // Cek kalau ada yang kosong
+      if (!name || !email || !subject || !message) {
+        alert("Waduh, isi dulu semua kolomnya ya!");
+        return;
+      }
+
+      const phoneNumber = "62881024490239";
+
+      // Susun teksnya (Pakai \n untuk baris baru di JS)
+      const text = `*Halo Attaya!*%0A` +
+        `Ada pesan baru nih:%0A%0A` +
+        `*Nama:* ${name}%0A` +
+        `*Email:* ${email}%0A` +
+        `*Subject:* ${subject}%0A%0A` +
+        `*Pesan:*%0A${message}`;
+
+      // INI BAGIAN PENTINGNYA:
+      // Gunakan encodeURIComponent supaya spasi & simbol aman di URL
+      const url = `https://wa.me/${phoneNumber}?text=${text}`;
+
+      window.open(url, '_blank');
+    }
+
+      const logoImg = document.getElementById('logo-img');
+      const tayaText = document.getElementById('taya-text');
+
+      function autoSwapLogo() {
+        // Hanya berjalan di layar di bawah 1024px (Tablet/HP)
+        if (window.innerWidth < 1024) {
+          // Tampilkan Teks, Hilangkan Gambar
+          logoImg.classList.replace('opacity-100', 'opacity-0');
+          tayaText.classList.replace('opacity-0', 'opacity-100');
+
+          // Kembalikan ke normal setelah 3 detik
+          setTimeout(() => {
+            logoImg.classList.replace('opacity-0', 'opacity-100');
+            tayaText.classList.replace('opacity-100', 'opacity-0');
+          }, 10000);
+        }
+      }
+
+      // Jalankan setiap 10 detik
+      setInterval(autoSwapLogo, 20000);
   </script>
 </body>
 
