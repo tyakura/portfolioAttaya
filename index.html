@@ -1,552 +1,861 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/img2/tayajpn2.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portofolio attaya</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/assets/img2/tayajpn2.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>portfolio-attaya2</title>
-  <link rel="stylesheet" href="src/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <script src="/src/main.js"></script>
-</head>
+  <body class="flex h-screen overflow-y-scroll bg-gray-900">
+    <div
+      id="mobile-sidebar"
+      class="fixed inset-0 bg-black/50 z-60 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"
+    ></div>
 
-<body class="flex h-screen overflow-y-scroll bg-gray-900">
-  <div id="mobile-sidebar"
-    class="fixed inset-0 bg-black/50 z-60 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden">
-  </div>
-
-  <div id="sidebar-menu"
-    class="fixed top-0 -left-full md:w-[40%] w-[70%] h-screen bg-[#FFF1E6] z-70 transition-all duration-500 ease-in-out lg:hidden flex flex-col p-8 ring-1 ring-black">
-    <div class="flex justify-between items-center mb-10">
-      <span class="kaushan-script-regular text-3xl">Attaya</span>
-      <button id="close-menu" class="text-2xl"><i class="fas fa-times"></i></button>
-    </div>
-
-    <nav class="flex flex-col gap-6 text-[18px] font-bold space-mono-bold">
-      <a href="#about" class="mobile-link border-b border-black/10 pb-2">ABOUT</a>
-      <a href="#skill" class="mobile-link border-b border-black/10 pb-2">SKILLS</a> <a href="#portfolio"
-        class="mobile-link border-b border-black/10 pb-2">PORTFOLIO</a>
-      <a href="#contact" class="mobile-link border-b border-black/10 pb-2">CONTACT</a>
-    </nav>
-
-    <div class="mt-auto flex gap-4 text-2xl">
-      <a href="https://github.com/tyakura"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.instagram.com/taya_asakura/"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.linkedin.com/in/attaya-arkarna-9b0a3b2b1/"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=100093831633257&locale=id_ID"><i class="fa-brands fa-facebook"></i></a>
-    </div>
-  </div>
-  <header
-    class="flex items-center justify-between md:p-4 pb-2 pt-4 px-6 flex-col bg-[#FFF1E6] md:w-[5%] w-[10%] md:min-w-[70px] min-w-[50px] h-screen ring-1 ring-offset-black z-50 transition-all duration-500">
-    <div class="lg:hidden block">
-      <button id="menu-toggle"
-        class="bg-black/75 ring-1 ring-black md:w-14 w-10 md:h-14 h-10 mb-2 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out">
-        <i class="fas fa-bars text-[24px] text-white"></i>
-      </button>
-    </div>
-    <nav class="flex flex-col justify-between pb-4 items-center overflow-hidden lg:mt-5 mt-2 min-w-full h-full">
-      <div onclick="resetLayout()" title="Kembali ke Beranda"
-        class="relative group md:w-24 w-16 h-10 flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out hover:scale-105">
-
-        <img src="assets/img2/tayajpn3.png" alt="logo" id="logo-img"
-          class="md:w-16 w-12 transition-all duration-500 opacity-100 lg:group-hover:opacity-0">
-
-        <a href="#" id="taya-text"
-          class="absolute inset-0 flex items-center justify-center kaushan-script-regular md:text-[28px] text-[20px] text-black transition-all duration-500 opacity-0 lg:group-hover:opacity-100 pointer-events-none lg:group-hover:pointer-events-auto">
-          Taya
-        </a>
+    <div
+      id="sidebar-menu"
+      class="fixed top-0 -left-full md:w-[40%] w-[70%] h-screen bg-[#FFF1E6] z-70 transition-all duration-500 ease-in-out lg:hidden flex flex-col p-8 ring-1 ring-black"
+    >
+      <div class="flex justify-between items-center mb-10">
+        <span class="kaushan-script-regular text-3xl">Attaya</span>
+        <button id="close-menu" class="text-2xl">
+          <i class="fas fa-times"></i>
+        </button>
       </div>
 
-      <div class="sosmed flex flex-col items-center justify-center md:w-12 w-8 -mb-4 gap-2">
+      <nav class="flex flex-col gap-6 text-[18px] font-bold space-mono-bold">
+        <a href="#about" class="mobile-link border-b border-black/10 pb-2"
+          >ABOUT</a
+        >
+        <a href="#skill" class="mobile-link border-b border-black/10 pb-2"
+          >SKILLS</a
+        >
+        <a href="#portfolio" class="mobile-link border-b border-black/10 pb-2"
+          >PORTFOLIO</a
+        >
+        <a href="#contact" class="mobile-link border-b border-black/10 pb-2"
+          >CONTACT</a
+        >
+      </nav>
+
+      <div class="mt-auto flex gap-4 text-2xl">
+        <a href="https://github.com/tyakura"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.instagram.com/taya_asakura/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/attaya-arkarna-9b0a3b2b1/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100093831633257&locale=id_ID"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+    </div>
+    <header
+      class="flex items-center justify-between md:p-4 pb-2 pt-4 px-6 flex-col bg-[#FFF1E6] md:w-[5%] w-[10%] md:min-w-[70px] min-w-[50px] h-screen ring-1 ring-offset-black z-50 transition-all duration-500"
+    >
+      <div class="lg:hidden block">
+        <button
+          id="menu-toggle"
+          class="bg-black/75 ring-1 ring-black md:w-14 w-10 md:h-14 h-10 mb-2 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out"
+        >
+          <i class="fas fa-bars text-[24px] text-white"></i>
+        </button>
+      </div>
+      <nav
+        class="flex flex-col justify-between pb-4 items-center overflow-hidden lg:mt-5 mt-2 min-w-full h-full"
+      >
         <div
-          class="pembatas group bg-white/25 ring-1 group ring-black md:w-14 w-10 md:h-14 h-10 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out">
-          <a href="https://www.instagram.com/taya_asakura/"><i
-              class="fa-brands fa-instagram text-2xl group-hover:text-white group-hover:rotate-5 group-hover:scale-105 transition-all duration-300"></i>
+          onclick="resetLayout()"
+          title="Kembali ke Beranda"
+          class="relative group md:w-24 w-16 h-10 flex items-center justify-center cursor-pointer transition-all duration-300 ease-in-out hover:scale-105"
+        >
+          <img
+            src="assets/img2/tayajpn3.png"
+            alt="logo"
+            id="logo-img"
+            class="md:w-16 w-12 transition-all duration-500 opacity-100 lg:group-hover:opacity-0"
+          />
+
+          <a
+            href="#"
+            id="taya-text"
+            class="absolute inset-0 flex items-center justify-center kaushan-script-regular md:text-[28px] text-[20px] text-black transition-all duration-500 opacity-0 lg:group-hover:opacity-100 pointer-events-none lg:group-hover:pointer-events-auto"
+          >
+            Taya
           </a>
         </div>
-        <div
-          class="pembatas group bg-white/25 ring-1 ring-black md:w-14 w-10 md:h-14 h-10 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out">
-          <a href="https://www.linkedin.com/in/attaya-arkarna-284099387/"><i
-              class="fa-brands fa-linkedin text-2xl group-hover:text-white group-hover:rotate-5 transition-all duration-300"></i></a>
-        </div>
-        <div
-          class="pembatas group bg-white/25 ring-1 ring-black md:w-14 w-10 md:h-14 h-10 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out">
-          <a href="https://github.com/tyakura"><i
-              class="fa-brands fa-github text-2xl group-hover:text-white group-hover:rotate-5 transition-all duration-300"></i></a>
-        </div>
-        <div
-          class="pembatas group bg-white/25 ring-1 ring-black md:w-14 w-10 md:h-14 h-10 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out">
-          <a href="https://www.facebook.com/profile.php?id=100093831633257"><i
-              class="fa-brands fa-facebook text-2xl group-hover:text-white transition-all duration-300"></i></a>
-        </div>
-        <div class="pembatas w-8 h-0.5 bg-black rounded-full"></div>
-      </div>
-    </nav>
-  </header>
 
-  <div class="w-[95%] overflow-y-auto relative bg-[#FFF1E6]">
-    <section id="hero"
-      class="bg-[url(/assets/img2/japanesestreet.jpg)] bg-cover bg-center min-h-screen p-8 md:pl-16 pl-8 flex flex-col justify-end relative">
-      <div class="absolute inset-0 bg-gradient from-black/60 to-transparent"></div>
-      <div class="relative z-10 text-white">
-        <h1 class="md:text-[96px] text-[40px] font-semibold leading-[1.1] tracking-tight font-montserrat">
-          I'M ATTAYA <br />ARKARNA
-        </h1>
-        <h2 class="md:text-[30px] text-[20px] font-semibold mt-4 mb-4 space-mono-regular leading-tight">
-          Experienced
-          <span class="write bg-[#FFF1E6] text-black"></span> <br />From
-          Madinatul Qur'an
-        </h2>
-        <a href="#about"
-          class="bg-[#FFF1E6] text-black md:px-6 hover:ring-1 hover:ring-white md:py-3 py-2 px-4 mt-8 md:text-[18px] text-[14px] rounded-lg font-bold hover:bg-black hover:text-white transition-all">
-          About me
-        </a>
-      </div>
-    </section>
-
-    <section id="about" class="md:p-4 p-4 flex mt-8 flex-col gap-20">
-      <div class="max-w-5xl mx-auto gap-6 w-full md:mt-20 mt-10">
-        <h1 class="md:text-[40px] text-[30px] font-bold md:mb-4 mb-2 font-space-mono text-black space-mono-bold">
-          ABOUT ME
-        </h1>
-        <hr class="w-full mt-4 mb-8" />
-        <div class="flex flex-col lg:flex-row gap-12 items-center lg:items-start">
+        <div
+          class="sosmed flex flex-col items-center justify-center md:w-12 w-8 -mb-4 gap-2"
+        >
           <div
-            class="lg:w-[350px] lg:h-[350px] shrink-0 mx-auto bg-top bg-cover bg-black overflow-hidden ring-1 ring-black ring-offset-4">
-            <img src="/assets/img2/Fototaya2.png" alt="attaya"
-              class="w-full h-full object-[0_20%] object-cover opacity-80" />
+            class="pembatas group bg-white/25 ring-1 group ring-black md:w-14 w-10 md:h-14 h-10 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out"
+          >
+            <a href="https://www.instagram.com/taya_asakura/"
+              ><i
+                class="fa-brands fa-instagram text-2xl group-hover:text-white group-hover:rotate-5 group-hover:scale-105 transition-all duration-300"
+              ></i>
+            </a>
           </div>
-          <div class="flex-1">
-            <h1 class="md:text-[30px] text-[24px] font-bold mb- font-space-mono space-mono-bold">
-              Attaya Arkarna
-            </h1>
-            <hr class="w-[5%] ring-1 my-1" />
-            <h2 class="md:text-[20px] text-[18px] text-black/60 mb-6 font-space-mono space-mono-bold">
-              Student Software Engineer
-            </h2>
-            <hr class="mt-8 mb-2" />
-            <p
-              class="md:text-[18px] text-[16px] leading-relaxed text-justify text-black/80 font-space-mono space-mono-regular">
-              I am a web development student focused on building modern,
-              responsive, and user-centered websites. I continuously sharpen
-              my Front-End and Back-End skills to deliver impactful and
-              high-quality digital experiences.
-            </p>
+          <div
+            class="pembatas group bg-white/25 ring-1 ring-black md:w-14 w-10 md:h-14 h-10 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out"
+          >
+            <a href="https://www.linkedin.com/in/attaya-arkarna-284099387/"
+              ><i
+                class="fa-brands fa-linkedin text-2xl group-hover:text-white group-hover:rotate-5 transition-all duration-300"
+              ></i
+            ></a>
+          </div>
+          <div
+            class="pembatas group bg-white/25 ring-1 ring-black md:w-14 w-10 md:h-14 h-10 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out"
+          >
+            <a href="https://github.com/tyakura"
+              ><i
+                class="fa-brands fa-github text-2xl group-hover:text-white group-hover:rotate-5 transition-all duration-300"
+              ></i
+            ></a>
+          </div>
+          <div
+            class="pembatas group bg-white/25 ring-1 ring-black md:w-14 w-10 md:h-14 h-10 flex items-center justify-center rounded-lg hover:bg-black transition-all duration-300 ease-in-out"
+          >
+            <a href="https://www.facebook.com/profile.php?id=100093831633257"
+              ><i
+                class="fa-brands fa-facebook text-2xl group-hover:text-white transition-all duration-300"
+              ></i
+            ></a>
+          </div>
+          <div class="pembatas w-8 h-0.5 bg-black rounded-full"></div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="w-[95%] overflow-y-auto relative bg-[#FFF1E6]">
+      <section
+        id="hero"
+        class="bg-[url(/assets/img2/japanesestreet.jpg)] bg-cover bg-center min-h-screen p-8 md:pl-16 pl-8 flex flex-col justify-end relative"
+      >
+        <div
+          class="absolute inset-0 bg-gradient from-black/60 to-transparent"
+        ></div>
+        <div class="relative z-10 text-white">
+          <h1
+            class="md:text-[96px] text-[40px] font-semibold leading-[1.1] tracking-tight font-montserrat"
+          >
+            I'M ATTAYA <br />ARKARNA
+          </h1>
+          <h2
+            class="md:text-[30px] text-[20px] font-semibold mt-4 mb-4 space-mono-regular leading-tight"
+          >
+            Experienced
+            <span class="write bg-[#FFF1E6] text-black"></span> <br />From
+            Madinatul Qur'an
+          </h2>
+          <a
+            href="#about"
+            class="bg-[#FFF1E6] text-black md:px-6 hover:ring-1 hover:ring-white md:py-3 py-2 px-4 mt-8 md:text-[18px] text-[14px] rounded-lg font-bold hover:bg-black hover:text-white transition-all"
+          >
+            About me
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="md:p-4 p-4 flex mt-8 flex-col gap-20">
+        <div class="max-w-5xl mx-auto gap-6 w-full md:mt-20 mt-10">
+          <h1
+            class="md:text-[40px] text-[30px] font-bold md:mb-4 mb-2 font-space-mono text-black space-mono-bold"
+          >
+            ABOUT ME
+          </h1>
+          <hr class="w-full mt-4 mb-8" />
+          <div
+            class="flex flex-col lg:flex-row gap-12 items-center lg:items-start"
+          >
             <div
-              class="flex md:gap-4 gap-2 mt-8 md:text-[18px] text-[14px] font-space-mono space-mono-regular flex-wrap">
-              <p
-                class="md:px-4 px-2 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
-                HTML
-              </p>
-              <p
-                class="md:px-4 px-2 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
-                CSS
-              </p>
-              <p
-                class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
-                JavaScript
-              </p>
-              <p
-                class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
-                PHP
-              </p>
-              <p
-                class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
-                React
-              </p>
-              <p
-                class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
-                Tailwindcss
-              </p>
-              <p
-                class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
-                Figma
-              </p>
-              <p
-                class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl">
-                Canva
-              </p>
+              class="lg:w-[350px] lg:h-[350px] shrink-0 mx-auto bg-top bg-cover bg-black overflow-hidden ring-1 ring-black ring-offset-4"
+            >
+              <img
+                src="/assets/img2/Fototaya2.png"
+                alt="attaya"
+                class="w-full h-full object-[0_20%] object-cover opacity-80"
+              />
             </div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- skill html -->
-      <div id="skill" class="max-w-5xl mx-auto w-full mt-20">
-        <div class="lg:flex md:flex-row lg:gap-4 gap-1 flex-col lg:justify-start justify-center items-center">
-
-          <div class="flex flex-col lg:justify-start justify-center items-center lg:gap-2 gap-0.5 mb:w-full lg:mb-4">
-            <button onclick="showTab('tab-skill')"
-              class="tab-btn active-tab flex items-end space-mono-bold lg:w-60 w-full lg:h-26 h-16 text-black text-start lg:text-2xl text-xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img2/Igtaya8.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black mr-4 md:pl-2 md:pb-0.5 pl-4 pb-2 ease-in-out duration-1000 hover:text-white">
-              SKILL
-            </button>
-            <button onclick="showTab('tab-edukasi')"
-              class="tab-btn flex items-end space-mono-bold lg:w-60 w-full lg:h-26 h-16 text-black text-start lg:text-2xl text-xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img2/Igtaya8.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black lg:mt-2 mt-0.5 mr-4 ease-in-out duration-1000 hover:text-white">
-              EDUCATION
-            </button>
-            <button onclick="showTab('tab-pengalaman')"
-              class="tab-btn flex items-end space-mono-bold lg:w-60 w-full lg:h-26 h-16 text-black text-start lg:text-2xl text-xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img2/Igtaya8.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black lg:mt-2 mt-0.5 mr-4 ease-in-out duration-1000 hover:text-white">
-              EXPERIENCE
-            </button>
-          </div>
-
-
-
-          <div class="flex-1 md:py-8 py-16">
-
-            <div id="tab-skill" class="tab-content">
-              <h3 class="text-[30px] font-bold mb-4 space-mono-bold">Skills</h3>
-              <hr class="border-black mt-4 mb-6">
-              <div class="space-y-6">
-                <div>
-                  <div class="flex justify-between mb-2"><span>HTML</span><span>90%</span></div>
-                  <div class="w-full h-2 bg-gray-300 rounded-full">
-                    <div class="h-full bg-red-500 w-[90%]"></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex justify-between mb-2"><span>CSS/Tailwind</span><span>50%</span></div>
-                  <div class="w-full h-2 bg-gray-300 rounded-full">
-                    <div class="h-full bg-red-500 w-[50%]"></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex justify-between mb-2"><span>PHP</span><span>70%</span></div>
-                  <div class="w-full h-2 bg-gray-300 rounded-full">
-                    <div class="h-full bg-red-500 w-[70%]"></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex justify-between mb-2"><span>JavaScript</span><span>60%</span></div>
-                  <div class="w-full h-2 bg-gray-300 rounded-full">
-                    <div class="h-full bg-red-500 w-[60%]"></div>
-                  </div>
-                </div>
+            <div class="flex-1">
+              <h1
+                class="md:text-[30px] text-[24px] font-bold mb- font-space-mono space-mono-bold"
+              >
+                Attaya Arkarna
+              </h1>
+              <hr class="w-[5%] ring-1 my-1" />
+              <h2
+                class="md:text-[20px] text-[18px] text-black/60 mb-6 font-space-mono space-mono-bold"
+              >
+                Student Software Engineer
+              </h2>
+              <hr class="mt-8 mb-2" />
+              <p
+                class="md:text-[18px] text-[16px] leading-relaxed text-justify text-black/80 font-space-mono space-mono-regular"
+              >
+                I am a web development student focused on building modern,
+                responsive, and user-centered websites. I continuously sharpen
+                my Front-End and Back-End skills to deliver impactful and
+                high-quality digital experiences.
+              </p>
+              <div
+                class="flex md:gap-4 gap-2 mt-8 md:text-[18px] text-[14px] font-space-mono space-mono-regular flex-wrap"
+              >
+                <p
+                  class="md:px-4 px-2 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl"
+                >
+                  HTML
+                </p>
+                <p
+                  class="md:px-4 px-2 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl"
+                >
+                  CSS
+                </p>
+                <p
+                  class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl"
+                >
+                  JavaScript
+                </p>
+                <p
+                  class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl"
+                >
+                  PHP
+                </p>
+                <p
+                  class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl"
+                >
+                  React
+                </p>
+                <p
+                  class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl"
+                >
+                  Tailwindcss
+                </p>
+                <p
+                  class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl"
+                >
+                  Figma
+                </p>
+                <p
+                  class="px-4 py-2 rounded-lg ring-1 ring-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl"
+                >
+                  Canva
+                </p>
               </div>
             </div>
-
-            <div id="tab-edukasi" class="tab-content hidden space-mono-regular">
-              <h3 class="text-[30px] font-bold space-mono-bold">Education History</h3>
-              <hr class="border-black mt-4 mb-6">
-              <ul class="space-y-4">
-                <li
-                  class="pl-4 group flex items-center relative md:gap-4 gap-2 ring-2 hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out ">
-                  <img src="/assets/img2/logorb.png" alt="mq" onclick="window.location.href='https://rabbaanii.sch.id/'"
-                    class="md:w-10 md:h-10 w-8 h-8 bg-white rounded-full my-2 hover:my-4 hover:shadow-lg hover:shadow-black hover:-rotate-10 cursor-pointer transition-all duration-300 ease-in-out">
-                  <div class="tex">
-                    <h4
-                      class="font-bold md:text-[16px] text-[13px] group-hover:text-white transition-all duration-300 ease-in-out">
-                      SDIT Rabbaani
-                      Islamic School</h4>
-
-                  </div>
-                  <div class="time absolute md:right-6 right-0 md:top-2.5 bottom-0">
-                    <p
-                      class="md:text-[24px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
-                      2015 - 2021</p>
-                  </div>
-                </li>
-                <li
-                  class="pl-4 group flex items-center relative md:gap-4 gap-2 ring-2 hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out ">
-                  <img src="/assets/img2/logorb.png" alt="mq" onclick="window.location.href='https://rabbaanii.sch.id/'"
-                    class="md:w-10 md:h-10 w-8 h-8 bg-white rounded-full my-2 hover:my-4 hover:shadow-lg hover:shadow-black hover:-rotate-10 cursor-pointer transition-all duration-300 ease-in-out">
-                  <div class="tex">
-                    <h4
-                      class="font-bold md:text-[16px] text-[13px] group-hover:text-white transition-all duration-300 ease-in-out">
-                      SMPIT Rabbaani
-                      Islamic School</h4>
-
-                  </div>
-                  <div class="time absolute md:right-6 right-0 md:top-2.5 bottom-0">
-                    <p
-                      class="md:text-[24px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
-                      2022 - 2025</p>
-                  </div>
-                </li>
-                <li
-                  class="pl-4 lg:h-full h-20 group flex items-center relative md:gap-4 gap-2 ring-2 hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out ">
-                  <img src="/assets/img2/logomq.png" alt="mq"
-                    onclick="window.location.href='https://ppdb.smkmadinatulquran.sch.id/'"
-                    class="md:w-10 md:h-10 w-8 h-8 bg-white rounded-full my-2 hover:my-4 hover:shadow-lg hover:shadow-black hover:-rotate-10 cursor-pointer transition-all duration-300 ease-in-out">
-                  <div class="tex">
-                    <h4
-                      class="font-bold md:text-[16px] text-[13px] group-hover:text-white transition-all duration-300 ease-in-out">
-                      SMK Madinatul
-                      Qur'an</h4>
-                    <p
-                      class="md:text-[14px] text-[10px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
-                      Software Engineering Student</p>
-                  </div>
-                  <div class="time absolute md:right-6 right-2 lg:top-2.5 md:top-5 sm:bottom-0 bottom-0">
-                    <p
-                      class="md:text-[24px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
-                      2026 - 2028</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <div id="tab-pengalaman" class="tab-content hidden">
-              <h3 class="text-[30px] font-bold mb-6 space-mono-bold">Experience</h3>
-              <hr class="border-black mt-4 mb-6">
-              <ul class="space-y-4 space-mono-regular">
-                <li
-                  class="ring-1 ring-black p-4 relative flex items-center gap-4 group hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out flex-col">
-                  <div class="tex atas w-full flex gap-4 items-center">
-                    <i
-                      class="fa-brands fa-uikit lg:text-[30px] text-[25px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-2 hover:py-2 hover:shadow-lg hover:shadow-black"></i>
-                    <div class="tex">
-                      <h4
-                        class="font-bold lg:text-[18px] text-[16px] group-hover:text-white transition-all duration-300 ease-in-out">
-                        UI Design</h4>
-                      <p
-                        class="lg:text-[16px] text-[14px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
-                        High school student</p>
-                    </div>
-                    <p
-                      class="lg:text-2xl text-[14px] text-gray-400 ml-40 font-bold hover:text-transparent hover:bg-clip-text absolute top-2 right-2 hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
-                      2026 - 2028</p>
-                  </div>
-
-                  <div class="tex bawah mt-2 lg:text-[16px] text-[14px] ">
-                    <p>Between 2025 and 2026, I crafted intuitive UI/UX designs and transformed them into responsive,
-                      high-performance websites using modern web development technologies.</p>
-                  </div>
-                </li>
-                <li
-                  class="ring-1 ring-black p-4 flex items-center gap-4 group relative hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out flex-col">
-                  <div class="tex atas w-full flex gap-4 items-center">
-                    <i
-                      class="fa-brands fa-html5 lg:text-[30px] text-[25px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-3 hover:py-2 hover:shadow-lg hover:shadow-black"></i>
-                    <div class="tex">
-                      <h4
-                        class="font-bold lg:text-[18px] text-[16px] group-hover:text-white transition-all duration-300 ease-in-out">
-                        Web Developing</h4>
-                      <p
-                        class="lg:text-[16px] text-[12px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out">
-                        High
-                        school student</p>
-                    </div>
-                    <p
-                      class="lg:text-2xl text-[14px] text-gray-400 ml-40 font-bold hover:text-transparent hover:bg-clip-text absolute top-2 right-2 hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out">
-                      2026 - 2028</p>
-                  </div>
-                  <div class="tex bawah mt-2 lg:text-[16px] text-[14px] ">
-                    <p class=" group-hover:text-white transition-all duration-300 ease-in-out">From 2025 to
-                      2026, I delivered user-centric digital experiences by combining creative interface design with
-                      robust, efficient, and scalable front-end development.</p>
-                  </div>
-
-                </li>
-              </ul>
-            </div>
-
           </div>
         </div>
-      </div>
 
-      <div id="portfolio" class="portfolio max-w-5xl mx-auto gap-6 w-full mt-16 mb-4">
-        <h1 class="md:text-[40px] text-[30px] space-mono-bold text-black">Portfolio</h1>
-        <hr class="mt-4 mb-10 border-black/20" />
-
-        <div id="portfolio-grid" class="web flex flex-wrap md:gap-4 gap-2 md:justify-between justify-center">
-
-          <div onclick="window.location.href='https://meowketplace2.vercel.app/index.html'"
-            class="projek-item cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-full h-full bg-black ease-in-out duration-300">
-            <div class="grup1 relative rounded-md h-full">
-              <h1
-                class="text-3xl font-space-mono-bold absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10">
-                Meowketplace<br><span class="text-xl space-mono-regular">Website</span></h1>
-              <img src="/assets/img2/mockupcat.jpg" alt="meowketplace"
-                class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover" />
-            </div>
-          </div>
-
+        <!-- skill html -->
+        <div id="skill" class="max-w-5xl mx-auto w-full mt-20">
           <div
-            class="projek-item cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-[400px] h-[300px] bg-black ease-in-out duration-300">
-            <div class="grup1 relative rounded-md h-full">
-              <h1
-                class="text-3xl absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10 leading-tight">
-                Sgarage<br><span class="text-xl space-mono-regular">Figma Design</span></h1>
-              <img src="/assets/img2/mockupcar.jpg" alt="Sgarage"
-                class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover" />
-            </div>
-          </div>
-
-          <div
-            class="projek-item cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-[400px] h-[300px] bg-black ease-in-out duration-300">
-            <div class="grup1 relative rounded-md h-full">
-              <h1
-                class="text-3xl absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10 leading-tight">
-                Eyfy<br><span class="text-xl space-mono-regular">Figma Design</span></h1>
-              <img src="/assets/img2/mockupeyfy.jpg" alt="Eyfy"
-                class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover" />
-            </div>
-          </div>
-
-          <div onclick="window.location.href='https://bloomdoro-studio.vercel.app/'"
-            class="projek-item hidden md:block cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-[400px] h-[300px] bg-black ease-in-out duration-300">
-            <div class="grup1 relative rounded-md h-full">
-              <h1
-                class="text-3xl absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10 leading-tight">
-                Bloomdoro<br><span class="text-xl space-mono-regular">Website</span></h1>
-              <img src="/assets/img2/mockupbd.jpg" alt="Bloomdoro"
-                class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover" />
-            </div>
-          </div>
-
-          <div onclick="window.location.href='https://attaya-furniture-bxtg.vercel.app/'"
-            class="projek-item extra-projek hidden lg:block cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-[400px] h-[300px] bg-black ease-in-out duration-300">
-            <div class="grup1 relative rounded-md h-full">
-              <h1
-                class="text-3xl absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10 leading-tight">
-                Furniture Shop<br><span class="text-xl space-mono-regular">Website</span></h1>
-              <img src="/assets/img2/mockupfn.jpg" alt="Furniture"
-                class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover" />
-            </div>
-          </div>
-
-          <div onclick="window.location.href='https://portfolio-attaya.vercel.app/'"
-            class="projek-item extra-projek hidden lg:block cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-[400px] h-[300px] bg-black ease-in-out duration-300">
-            <div class="grup1 relative rounded-md h-full">
-              <h1
-                class="text-3xl absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10 leading-tight">
-                Portfolio<br><span class="text-xl space-mono-regular">Website</span></h1>
-              <img src="/assets/img2/mockupcv.jpg" alt="Portfolio"
-                class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover" />
-            </div>
-          </div>
-        </div>
-
-        <div class="flex justify-center mt-10 lg:hidden">
-          <button id="see-more-btn" onclick="togglePortfolio()"
-            class="px-8 py-3 bg-black text-white space-mono-bold rounded-full hover:bg-gray-800 transition-all duration-300">
-            See More
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact"
-      class="md:p-16 p-8 bg-[#FFF1E6] ring-y-1 ring-black ring-offset-4 text-black min-h-[50vh] flex flex-col items-center justify-center">
-      <div class="max-w-6xl mx-auto w-full">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-
-          <div class="space-mono-regular">
-            <h2 class="text-3xl font-bold mb-2 space-mono-bold uppercase tracking-tighter">Message Me</h2>
-            <div class="w-10 h-0.5 bg-black mb-10"></div>
-
-            <form action="#" class="flex flex-col gap-8">
-              <div class="relative border-b border-black/30 focus-within:border-black transition-colors">
-                <input type="text" id="name"
-                  class="w-full bg-transparent py-2 outline-none border-b border-black/30 focus-within:border-black transition-colors"
-                  placeholder="Name">
-              </div>
-
-              <div class="relative border-b border-black/30 focus-within:border-black transition-colors">
-                <input type="email" id="email"
-                  class="w-full bg-transparent py-2 outline-none border-b border-black/30 focus-within:border-black transition-colors"
-                  placeholder="Email">
-              </div>
-
-              <div class="relative border-b border-black/30 focus-within:border-black transition-colors">
-                <input type="text" id="subject"
-                  class="w-full bg-transparent py-2 outline-none border-b border-black/30 focus-within:border-black transition-colors"
-                  placeholder="Subject">
-              </div>
-
-              <div class="relative border-b border-black/30 focus-within:border-black transition-colors">
-                <textarea id="message"
-                  class="w-full bg-transparent h-28 outline-none border-b border-black/30 focus-within:border-black transition-colors"
-                  placeholder="Message"></textarea>
-              </div>
-
-              <button onclick="sendToWA()"
-                class="group bg-[#222] text-white w-fit px-8 py-3 rounded-full flex items-center gap-3 hover:bg-black transition-all mt-4">
-                <span class="text-xs font-bold tracking-widest uppercase">Send</span>
-                <i class="fa-regular fa-envelope text-sm group-hover:translate-x-1 transition-transform"></i>
+            class="lg:flex md:flex-row lg:gap-4 gap-1 flex-col lg:justify-start justify-center items-center"
+          >
+            <div
+              class="flex flex-col lg:justify-start justify-center items-center lg:gap-2 gap-0.5 mb:w-full lg:mb-4"
+            >
+              <button
+                onclick="showTab('tab-skill')"
+                class="tab-btn active-tab flex items-end space-mono-bold lg:w-60 w-full lg:h-26 h-16 text-black text-start lg:text-2xl text-xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img2/Igtaya8.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black mr-4 md:pl-2 md:pb-0.5 pl-4 pb-2 ease-in-out duration-1000 hover:text-white"
+              >
+                SKILL
               </button>
-            </form>
+              <button
+                onclick="showTab('tab-edukasi')"
+                class="tab-btn flex items-end space-mono-bold lg:w-60 w-full lg:h-26 h-16 text-black text-start lg:text-2xl text-xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img2/Igtaya8.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black lg:mt-2 mt-0.5 mr-4 ease-in-out duration-1000 hover:text-white"
+              >
+                EDUCATION
+              </button>
+              <button
+                onclick="showTab('tab-pengalaman')"
+                class="tab-btn flex items-end space-mono-bold lg:w-60 w-full lg:h-26 h-16 text-black text-start lg:text-2xl text-xl bg-dark bg-opacity-50 hover:bg-[url(/assets/img2/Igtaya8.png)] translate-y-2 hover:translate-y-0 bg-cover hover:bg-center ring-2 ring-black lg:mt-2 mt-0.5 mr-4 ease-in-out duration-1000 hover:text-white"
+              >
+                EXPERIENCE
+              </button>
+            </div>
+
+            <div class="flex-1 md:py-8 py-16">
+              <div id="tab-skill" class="tab-content">
+                <h3 class="text-[30px] font-bold mb-4 space-mono-bold">
+                  Skills
+                </h3>
+                <hr class="border-black mt-4 mb-6" />
+                <div class="space-y-6">
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span>HTML</span><span>90%</span>
+                    </div>
+                    <div class="w-full h-2 bg-gray-300 rounded-full">
+                      <div class="h-full bg-red-500 w-[90%]"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span>CSS/Tailwind</span><span>50%</span>
+                    </div>
+                    <div class="w-full h-2 bg-gray-300 rounded-full">
+                      <div class="h-full bg-red-500 w-[50%]"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span>PHP</span><span>70%</span>
+                    </div>
+                    <div class="w-full h-2 bg-gray-300 rounded-full">
+                      <div class="h-full bg-red-500 w-[70%]"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between mb-2">
+                      <span>JavaScript</span><span>60%</span>
+                    </div>
+                    <div class="w-full h-2 bg-gray-300 rounded-full">
+                      <div class="h-full bg-red-500 w-[60%]"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                id="tab-edukasi"
+                class="tab-content hidden space-mono-regular"
+              >
+                <h3 class="text-[30px] font-bold space-mono-bold">
+                  Education History
+                </h3>
+                <hr class="border-black mt-4 mb-6" />
+                <ul class="space-y-4">
+                  <li
+                    class="pl-4 group flex items-center relative md:gap-4 gap-2 ring-2 hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out"
+                  >
+                    <img
+                      src="/assets/img2/logorb.png"
+                      alt="mq"
+                      onclick="
+                        window.location.href = 'https://rabbaanii.sch.id/'
+                      "
+                      class="md:w-10 md:h-10 w-8 h-8 bg-white rounded-full my-2 hover:my-4 hover:shadow-lg hover:shadow-black hover:-rotate-10 cursor-pointer transition-all duration-300 ease-in-out"
+                    />
+                    <div class="tex">
+                      <h4
+                        class="font-bold md:text-[16px] text-[13px] group-hover:text-white transition-all duration-300 ease-in-out"
+                      >
+                        SDIT Rabbaani Islamic School
+                      </h4>
+                    </div>
+                    <div
+                      class="time absolute md:right-6 right-0 md:top-2.5 bottom-0"
+                    >
+                      <p
+                        class="md:text-[24px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out"
+                      >
+                        2015 - 2021
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="pl-4 group flex items-center relative md:gap-4 gap-2 ring-2 hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out"
+                  >
+                    <img
+                      src="/assets/img2/logorb.png"
+                      alt="mq"
+                      onclick="
+                        window.location.href = 'https://rabbaanii.sch.id/'
+                      "
+                      class="md:w-10 md:h-10 w-8 h-8 bg-white rounded-full my-2 hover:my-4 hover:shadow-lg hover:shadow-black hover:-rotate-10 cursor-pointer transition-all duration-300 ease-in-out"
+                    />
+                    <div class="tex">
+                      <h4
+                        class="font-bold md:text-[16px] text-[13px] group-hover:text-white transition-all duration-300 ease-in-out"
+                      >
+                        SMPIT Rabbaani Islamic School
+                      </h4>
+                    </div>
+                    <div
+                      class="time absolute md:right-6 right-0 md:top-2.5 bottom-0"
+                    >
+                      <p
+                        class="md:text-[24px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out"
+                      >
+                        2022 - 2025
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="pl-4 lg:h-full h-20 group flex items-center relative md:gap-4 gap-2 ring-2 hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out"
+                  >
+                    <img
+                      src="/assets/img2/logomq.png"
+                      alt="mq"
+                      onclick="
+                        window.location.href =
+                          'https://ppdb.smkmadinatulquran.sch.id/'
+                      "
+                      class="md:w-10 md:h-10 w-8 h-8 bg-white rounded-full my-2 hover:my-4 hover:shadow-lg hover:shadow-black hover:-rotate-10 cursor-pointer transition-all duration-300 ease-in-out"
+                    />
+                    <div class="tex">
+                      <h4
+                        class="font-bold md:text-[16px] text-[13px] group-hover:text-white transition-all duration-300 ease-in-out"
+                      >
+                        SMK Madinatul Qur'an
+                      </h4>
+                      <p
+                        class="md:text-[14px] text-[10px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out"
+                      >
+                        Software Engineering Student
+                      </p>
+                    </div>
+                    <div
+                      class="time absolute md:right-6 right-2 lg:top-2.5 md:top-5 sm:bottom-0 bottom-0"
+                    >
+                      <p
+                        class="md:text-[24px] text-[14px] text-gray-400 md:ml-40 font-bold hover:text-transparent hover:bg-clip-text hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out"
+                      >
+                        2026 - 2028
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div id="tab-pengalaman" class="tab-content hidden">
+                <h3 class="text-[30px] font-bold mb-6 space-mono-bold">
+                  Experience
+                </h3>
+                <hr class="border-black mt-4 mb-6" />
+                <ul class="space-y-4 space-mono-regular">
+                  <li
+                    class="ring-1 ring-black p-4 relative flex items-center gap-4 group hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out flex-col"
+                  >
+                    <div class="tex atas w-full flex gap-4 items-center">
+                      <i
+                        class="fa-brands fa-uikit lg:text-[30px] text-[25px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-2 hover:py-2 hover:shadow-lg hover:shadow-black"
+                      ></i>
+                      <div class="tex">
+                        <h4
+                          class="font-bold lg:text-[18px] text-[16px] group-hover:text-white transition-all duration-300 ease-in-out"
+                        >
+                          UI Design
+                        </h4>
+                        <p
+                          class="lg:text-[16px] text-[14px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out"
+                        >
+                          High school student
+                        </p>
+                      </div>
+                      <p
+                        class="lg:text-2xl text-[14px] text-gray-400 ml-40 font-bold hover:text-transparent hover:bg-clip-text absolute top-2 right-2 hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out"
+                      >
+                        2026 - 2028
+                      </p>
+                    </div>
+
+                    <div class="tex bawah mt-2 lg:text-[16px] text-[14px]">
+                      <p>
+                        Between 2025 and 2026, I crafted intuitive UI/UX designs
+                        and transformed them into responsive, high-performance
+                        websites using modern web development technologies.
+                      </p>
+                    </div>
+                  </li>
+                  <li
+                    class="ring-1 ring-black p-4 flex items-center gap-4 group relative hover:ring-black hover:bg-black/50 hover:text-white transition-all duration-300 ease-in-out flex-col"
+                  >
+                    <div class="tex atas w-full flex gap-4 items-center">
+                      <i
+                        class="fa-brands fa-html5 lg:text-[30px] text-[25px] group-hover:text-white transition-all duration-300 ease-in-out hover:bg-white hover:text-black hover:rounded-full hover:px-3 hover:py-2 hover:shadow-lg hover:shadow-black"
+                      ></i>
+                      <div class="tex">
+                        <h4
+                          class="font-bold lg:text-[18px] text-[16px] group-hover:text-white transition-all duration-300 ease-in-out"
+                        >
+                          Web Developing
+                        </h4>
+                        <p
+                          class="lg:text-[16px] text-[12px] text-gray-600 group-hover:text-white transition-all duration-300 ease-in-out"
+                        >
+                          High school student
+                        </p>
+                      </div>
+                      <p
+                        class="lg:text-2xl text-[14px] text-gray-400 ml-40 font-bold hover:text-transparent hover:bg-clip-text absolute top-2 right-2 hover:bg-linear-to-r hover:from-white hover:to-gray-400 transition-all duration-300 ease-in-out"
+                      >
+                        2026 - 2028
+                      </p>
+                    </div>
+                    <div class="tex bawah mt-2 lg:text-[16px] text-[14px]">
+                      <p
+                        class="group-hover:text-white transition-all duration-300 ease-in-out"
+                      >
+                        From 2025 to 2026, I delivered user-centric digital
+                        experiences by combining creative interface design with
+                        robust, efficient, and scalable front-end development.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <hr class="border-black/30 lg:hidden block mt-2 mb-2">
-          <div class="space-mono-regular">
-            <h2 class="text-3xl font-bold mb-2 space-mono-bold uppercase tracking-tighter">My Details</h2>
-            <div class="w-10 h-0.5 bg-black mb-10"></div>
+        </div>
 
-            <p class="text-black/70 leading-relaxed mb-12 mb:text-[18px] text-[16px]">
-              I always open for discussion about new project, creative idea, or opportunity to be part of your vision.
-              Don't hesitate to contact me through the form or contact details below.
-            </p>
+        <div
+          id="portfolio"
+          class="portfolio max-w-5xl mx-auto gap-6 w-full mt-16 mb-4"
+        >
+          <h1 class="md:text-[40px] text-[30px] space-mono-bold text-black">
+            Portfolio
+          </h1>
+          <hr class="mt-4 mb-10 border-black/20" />
 
-            <div class="flex flex-col gap-6 ">
-              <div class="flex items-center md:gap-6 gap-4 group">
-                <div
-                  class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
-                  <i class="fa-regular fa-envelope md:text-xl text-lg"></i>
-                </div>
-                <span
-                  class="font-bold text-[14px] md:text-[16px] tracking-widest break-all">attayaarkarna12@gmail.com</span>
+          <div
+            id="portfolio-grid"
+            class="web flex flex-wrap md:gap-4 gap-2 md:justify-between justify-center"
+          >
+            <div
+              onclick="
+                window.location.href =
+                  'https://meowketplace2.vercel.app/index.html'
+              "
+              class="projek-item cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-full h-full bg-black ease-in-out duration-300"
+            >
+              <div class="grup1 relative rounded-md h-full">
+                <h1
+                  class="text-3xl font-space-mono-bold absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10"
+                >
+                  Meowketplace<br /><span class="text-xl space-mono-regular"
+                    >Website</span
+                  >
+                </h1>
+                <img
+                  src="/assets/img2/mockupcat.jpg"
+                  alt="meowketplace"
+                  class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover"
+                />
               </div>
+            </div>
 
-              <div class="flex items-center md:gap-6 gap-4 group">
-                <div onclick="sendWA()"
-                  class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
-                  <i class="fa-solid fa-phone-flip md:text-xl text-lg"></i>
-                </div>
-                <span class="font-bold text-[14px] md:text-[16px] tracking-widest uppercase">+62 881 0244 90239</span>
+            <div
+              class="projek-item cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-[400px] h-[300px] bg-black ease-in-out duration-300"
+            >
+              <div class="grup1 relative rounded-md h-full">
+                <h1
+                  class="text-3xl absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10 leading-tight"
+                >
+                  Sgarage<br /><span class="text-xl space-mono-regular"
+                    >Figma Design</span
+                  >
+                </h1>
+                <img
+                  src="/assets/img2/mockupcar.jpg"
+                  alt="Sgarage"
+                  class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover"
+                />
               </div>
+            </div>
 
-              <div class="flex items-center md:gap-6 gap-4 group">
-                <div
-                  class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
-                  <i class="fa-solid fa-location-dot md:text-xl text-lg"></i>
-                </div>
-                <span class="font-bold text-[14px] md:text-[16px] tracking-widest uppercase italic">Cikarang Utara,
-                  Bekasi, Indonesia</span>
+            <div
+              class="projek-item cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-[400px] h-[300px] bg-black ease-in-out duration-300"
+            >
+              <div class="grup1 relative rounded-md h-full">
+                <h1
+                  class="text-3xl absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10 leading-tight"
+                >
+                  Eyfy<br /><span class="text-xl space-mono-regular"
+                    >Figma Design</span
+                  >
+                </h1>
+                <img
+                  src="/assets/img2/mockupeyfy.jpg"
+                  alt="Eyfy"
+                  class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover"
+                />
               </div>
+            </div>
 
-              <div class="flex items-center md:gap-6 gap-4 group">
-                <div
-                  class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0">
-                  <i class="fa-regular fa-clock md:text-xl text-lg"></i>
-                </div>
-                <span class="font-bold text-[14px] md:text-[16px] tracking-widest uppercase">Mon - Fri 9AM TO 5PM</span>
+            <div
+              onclick="
+                window.location.href = 'https://bloomdoro-studio.vercel.app/'
+              "
+              class="projek-item hidden md:block cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-[400px] h-[300px] bg-black ease-in-out duration-300"
+            >
+              <div class="grup1 relative rounded-md h-full">
+                <h1
+                  class="text-3xl absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10 leading-tight"
+                >
+                  Bloomdoro<br /><span class="text-xl space-mono-regular"
+                    >Website</span
+                  >
+                </h1>
+                <img
+                  src="/assets/img2/mockupbd.jpg"
+                  alt="Bloomdoro"
+                  class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div
+              onclick="
+                window.location.href =
+                  'https://attaya-furniture-bxtg.vercel.app/'
+              "
+              class="projek-item extra-projek hidden lg:block cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-[400px] h-[300px] bg-black ease-in-out duration-300"
+            >
+              <div class="grup1 relative rounded-md h-full">
+                <h1
+                  class="text-3xl absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10 leading-tight"
+                >
+                  Furniture Shop<br /><span class="text-xl space-mono-regular"
+                    >Website</span
+                  >
+                </h1>
+                <img
+                  src="/assets/img2/mockupfn.jpg"
+                  alt="Furniture"
+                  class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover"
+                />
+              </div>
+            </div>
+
+            <div
+              onclick="
+                window.location.href = 'https://portfolio-attaya.vercel.app/'
+              "
+              class="projek-item extra-projek hidden lg:block cursor-pointer ring-2 object-cover ring-black group lg:w-[300px] lg:h-[250px] md:w-[265px] md:h-[240px] w-[400px] h-[300px] bg-black ease-in-out duration-300"
+            >
+              <div class="grup1 relative rounded-md h-full">
+                <h1
+                  class="text-3xl absolute lg:bottom-0 bottom-2 left-4 opacity-100 lg:opacity-0 space-mono-bold text-white group-hover:opacity-100 group-hover:bottom-4 ease-in-out duration-300 z-10 leading-tight"
+                >
+                  Portfolio<br /><span class="text-xl space-mono-regular"
+                    >Website</span
+                  >
+                </h1>
+                <img
+                  src="/assets/img2/mockupcv.jpg"
+                  alt="Portfolio"
+                  class="lg:group-hover:opacity-50 lg:opacity-75 opacity-50 ease-in-out duration-300 w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
 
+          <div class="flex justify-center mt-10 lg:hidden">
+            <button
+              id="see-more-btn"
+              onclick="togglePortfolio()"
+              class="px-8 py-3 bg-black text-white space-mono-bold rounded-full hover:bg-gray-800 transition-all duration-300"
+            >
+              See More
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <hr class="border-black w-[80%] mx-auto my-4 md:my-8 ">
-    <footer class="flex flex-end w-[80%] mx-auto mb-8">
-      <div class="container">
-        <div class="text">
-          <div class="col-12">
-            <p class="md:text-right text-center space-mono-regular text-black/50 text-[14px] md:text-[16px]">Copyright
-              &copy; all right reserved 2026 Attaya Arkarna</p>
-            <div class="sosmed flex justify-center md:justify-end gap-2 mt-2 md:mt-0">
-              <a href="https://www.instagram.com/attaya.arkarna/"><i class="fa-brands fa-instagram text-[16px] md:text-[18px] text-black/75"></i></a>
-              <a href="https://www.linkedin.com/in/attaya-arkarna-a2b4a12b4/"><i class="fa-brands fa-linkedin text-[16px] md:text-[18px] text-black/75"></i></a>
-              <a href="https://www.facebook.com/profile.php?id=100093831633257"><i class="fa-brands fa-facebook text-[16px] md:text-[18px] text-black/75"></i></a>
-              <a href="https://github.com/attayaarkarna"><i class="fa-brands fa-github text-[16px] md:text-[18px] text-black/75"></i></a>
+      <section
+        id="contact"
+        class="md:p-16 p-8 bg-[#FFF1E6] ring-y-1 ring-black ring-offset-4 text-black min-h-[50vh] flex flex-col items-center justify-center"
+      >
+        <div class="max-w-6xl mx-auto w-full">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="space-mono-regular">
+              <h2
+                class="text-3xl font-bold mb-2 space-mono-bold uppercase tracking-tighter"
+              >
+                Message Me
+              </h2>
+              <div class="w-10 h-0.5 bg-black mb-10"></div>
+
+              <form action="#" class="flex flex-col gap-8">
+                <div
+                  class="relative border-b border-black/30 focus-within:border-black transition-colors"
+                >
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full bg-transparent py-2 outline-none border-b border-black/30 focus-within:border-black transition-colors"
+                    placeholder="Name"
+                  />
+                </div>
+
+                <div
+                  class="relative border-b border-black/30 focus-within:border-black transition-colors"
+                >
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full bg-transparent py-2 outline-none border-b border-black/30 focus-within:border-black transition-colors"
+                    placeholder="Email"
+                  />
+                </div>
+
+                <div
+                  class="relative border-b border-black/30 focus-within:border-black transition-colors"
+                >
+                  <input
+                    type="text"
+                    id="subject"
+                    class="w-full bg-transparent py-2 outline-none border-b border-black/30 focus-within:border-black transition-colors"
+                    placeholder="Subject"
+                  />
+                </div>
+
+                <div
+                  class="relative border-b border-black/30 focus-within:border-black transition-colors"
+                >
+                  <textarea
+                    id="message"
+                    class="w-full bg-transparent h-28 outline-none border-b border-black/30 focus-within:border-black transition-colors"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+
+                <button
+                  onclick="sendToWA()"
+                  class="group bg-[#222] text-white w-fit px-8 py-3 rounded-full flex items-center gap-3 hover:bg-black transition-all mt-4"
+                >
+                  <span class="text-xs font-bold tracking-widest uppercase"
+                    >Send</span
+                  >
+                  <i
+                    class="fa-regular fa-envelope text-sm group-hover:translate-x-1 transition-transform"
+                  ></i>
+                </button>
+              </form>
+            </div>
+            <hr class="border-black/30 lg:hidden block mt-2 mb-2" />
+            <div class="space-mono-regular">
+              <h2
+                class="text-3xl font-bold mb-2 space-mono-bold uppercase tracking-tighter"
+              >
+                My Details
+              </h2>
+              <div class="w-10 h-0.5 bg-black mb-10"></div>
+
+              <p
+                class="text-black/70 leading-relaxed mb-12 mb:text-[18px] text-[16px]"
+              >
+                I always open for discussion about new project, creative idea,
+                or opportunity to be part of your vision. Don't hesitate to
+                contact me through the form or contact details below.
+              </p>
+
+              <div class="flex flex-col gap-6">
+                <div class="flex items-center md:gap-6 gap-4 group">
+                  <div
+                    class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0"
+                  >
+                    <i class="fa-regular fa-envelope md:text-xl text-lg"></i>
+                  </div>
+                  <span
+                    class="font-bold text-[14px] md:text-[16px] tracking-widest break-all"
+                    >attayaarkarna12@gmail.com</span
+                  >
+                </div>
+
+                <div class="flex items-center md:gap-6 gap-4 group">
+                  <div
+                    onclick="sendWA()"
+                    class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0"
+                  >
+                    <i class="fa-solid fa-phone-flip md:text-xl text-lg"></i>
+                  </div>
+                  <span
+                    class="font-bold text-[14px] md:text-[16px] tracking-widest uppercase"
+                    >+62 881 0244 90239</span
+                  >
+                </div>
+
+                <div class="flex items-center md:gap-6 gap-4 group">
+                  <div
+                    class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0"
+                  >
+                    <i class="fa-solid fa-location-dot md:text-xl text-lg"></i>
+                  </div>
+                  <span
+                    class="font-bold text-[14px] md:text-[16px] tracking-widest uppercase italic"
+                    >Cikarang Utara, Bekasi, Indonesia</span
+                  >
+                </div>
+
+                <div class="flex items-center md:gap-6 gap-4 group">
+                  <div
+                    class="md:w-12 md:h-12 w-8 h-8 bg-[#222] hover:bg-white hover:ring-1 hover:ring-black flex items-center justify-center text-white hover:text-black transition-all duration-300 cursor-pointer ease-in-out shrink-0"
+                  >
+                    <i class="fa-regular fa-clock md:text-xl text-lg"></i>
+                  </div>
+                  <span
+                    class="font-bold text-[14px] md:text-[16px] tracking-widest uppercase"
+                    >Mon - Fri 9AM TO 5PM</span
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-  </div>
+      </section>
 
-  <script src="/src/jquery-3.6.4.min.js"></script>
-  <script src="/src/plugins.js"></script>
-  <script src="/src/main.js" type="module"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      <hr class="border-black w-[80%] mx-auto my-4 md:my-8" />
+      <footer class="flex flex-end w-[80%] mx-auto mb-8">
+        <div class="container">
+          <div class="text">
+            <div class="col-12">
+              <p
+                class="md:text-right text-center space-mono-regular text-black/50 text-[14px] md:text-[16px]"
+              >
+                Copyright &copy; all right reserved 2026 Attaya Arkarna
+              </p>
+              <div
+                class="sosmed flex justify-center md:justify-end gap-2 mt-2 md:mt-0"
+              >
+                <a href="https://www.instagram.com/attaya.arkarna/"
+                  ><i
+                    class="fa-brands fa-instagram text-[16px] md:text-[18px] text-black/75"
+                  ></i
+                ></a>
+                <a href="https://www.linkedin.com/in/attaya-arkarna-a2b4a12b4/"
+                  ><i
+                    class="fa-brands fa-linkedin text-[16px] md:text-[18px] text-black/75"
+                  ></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100093831633257"
+                  ><i
+                    class="fa-brands fa-facebook text-[16px] md:text-[18px] text-black/75"
+                  ></i
+                ></a>
+                <a href="https://github.com/attayaarkarna"
+                  ><i
+                    class="fa-brands fa-github text-[16px] md:text-[18px] text-black/75"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-  <!-- skill -->
-  <script>
+    <script src="/src/jquery-3.6.4.min.js"></script>
+    <script src="/src/plugins.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="/src/main.js" type="module"></script>
+
+    <!-- skill -->
+    <!-- <script>
     scrollBehavior = "smooth";
     function showTab(tabId) {
       // 1. Ambil semua konten dan tombol
@@ -930,8 +1239,6 @@
 
       // Jalankan setiap 10 detik
       setInterval(autoSwapLogo, 20000);
-  </script>
-</body>
-
-
+  </script> -->
+  </body>
 </html>
